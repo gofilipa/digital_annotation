@@ -8,7 +8,7 @@ This is the **Building** phase, during which I will create the MVP (Minimal Viab
 
 ### March
 
-The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. This is an opportunity to combine theory with practice, as I will be re-considering some of my *Guiding Questions* from my [Proposal Summary](/proposal_summary.md):
+The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will combine theory with practice, and explore some of my *Guiding Questions* from my [Proposal Summary](/proposal_summary.md):
 * First, how do traditional annotation tools and practices support a prescriptive approach to teaching close reading: how do they create a standardized method or process in responding to texts?
 * Second, more specifically, do certain features, such as colors, categories, or tags, for example, actually limit the kinds of responses students might have without these prompts? In other words, do these options actually create a structure that confines student thinking?
 * Third, from the opposite perspective, how can giving students more nonverbal options in an annotation tool provoke them toward more spontaneous insights?
