@@ -6,4 +6,6 @@ In brief, the project consists of developing an annotation tool (from [hypothes.
 
 See "[Proposal Summary](/proposal_summary.md)" for a condensed version of the proposal paper I wrote for my Interactive Technology and Pedagogy class in Spring 2018. There, you will see my problem statement, proposal, critical engagements (with citations), guiding questions, and tentative plan to complete the project.
 
-See the folder "[ITP_PapersAndFeedback](/ITP_PapersAndFeedback)" for my coursework completed (as well as feedback) during my Interactive Technology and Pedagogy II class in the Spring of 2018.
+See the folder "[ITP papers and feedback](/ITP_PapersAndFeedback)" for my coursework completed (as well as feedback) during my Interactive Technology and Pedagogy II class in the Spring of 2018.
+
+Finally, see the [Tentative Scheule](Tentative_Schedule.md) for a timeline of the work to be carried out developing this project through Spring 2019.
