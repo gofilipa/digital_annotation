@@ -1,14 +1,25 @@
-The Independent Study work (to be completed during Spring of 2019) is divided into four stages, **Building**, **Breaking**, **Sharing**, with a preliminary set-up stage. Below is a brief and tentative sketch of the schedule.
+The Independent Study work (to be completed during Spring of 2019) is divided into four stages, **Building**, **Breaking**, **Sharing**, with a preliminary reach out and set up stage. Below is a brief and tentative sketch of the schedule.
 
-### January
-This is a preliminary period during which I will do research on the Hypothes.is codebase and set up my development environment to make changes to Hyp.
+### November - December 2018
 
-### February
-This is the **Building** phase, during which I will create the MVP (Minimal Viable Product). My goal is to create single change to Hyp that adds multicolor functionality to the highlighter tool. During this time, I will focus solely on the Hyp codebase, and aim for my specific objective. This month will be relatively unstructured building work, because I cannot anticipate the obstacles that are sure to arise. I may have to spend some weeks brushing up on coding languages if needed.
+Reaching out---
+
+This is a preliminary period during which I will do research on the Hypothes.is codebase and set up my development environment to make changes to Hyp. I may also have to spend some weeks brushing up on coding languages if needed.
+
+### January-February 2019
+
+This is the **Building** phase, during which I will create the MVP (Minimal Viable Product). My goal is to implement a single change to Hyp that adds multicolor functionality to the highlighter tool. During this time, I will focus solely on the Hyp codebase, and aim for my specific objective. This month will be somewhat unstructured, because I cannot anticipate the obstacles that are sure to arise. 
+
+In this phase, I tackle the work according to three separate "problems":
+- *the UI problem*---what does the element look like, where is it called throughout the code?
+- *the API problem*---how do I get this command (probably ajax) into the API, formatted and streamlined?
+- *the Database problem*---where is it stored?
 
 ### March
 
-The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will combine theory with practice, and explore some of my *Guiding Questions* from my [Proposal Summary](/proposal_summary.md):
+The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will focus on two things: responding to contributor requests on Github, and engaging my work with my original theoretical frame. 
+
+Specifically, I will explore some of my *Guiding Questions* from my [Proposal Summary](/proposal_summary.md), in an attempt to combine theory with practice:
 * First, how do traditional annotation tools and practices support a prescriptive approach to teaching close reading: how do they create a standardized method or process in responding to texts?
 * Second, more specifically, do certain features, such as colors, categories, or tags, for example, actually limit the kinds of responses students might have without these prompts? In other words, do these options actually create a structure that confines student thinking?
 * Third, from the opposite perspective, how can giving students more nonverbal options in an annotation tool provoke them toward more spontaneous insights?
