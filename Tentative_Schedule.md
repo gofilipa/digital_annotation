@@ -2,9 +2,9 @@ The Independent Study work (to be completed during Spring of 2019) is divided in
 
 ### November - December 2018
 
-This is the **Preliminary Period** during which I will reaching out to folks at Hypothes.is and Github contributors. The goal is to alert them to my project ideas and ask for input or suggestions/preferences, if they have any.
+This is the **Preliminary Period** during which I will reach out to folks at Hypothes.is and Github contributors. The goal is to alert them to my project ideas and ask for input or suggestions/preferences, if they have any.
 
-Besides making contact with these folks, I will do research on the Hypothes.is codebase and set up my development environment to make changes. I may also have to spend some weeks brushing up on coding languages / UI design if needed.
+Besides making contact with these folks, I will do research on the Hypothes.is codebase and set up my development environment to make changes. I may also have to spend some weeks brushing up on coding languages / UI design as needed.
 
 ### January-February 2019
 
@@ -17,15 +17,15 @@ In this phase, I tackle the work according to three separate "problems":
 
 ### March 2019
 
-The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will focus on two things: responding to contributor requests on Github, and engaging my work with my original theoretical frame. 
+The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will focus on two goals: responding to contributor requests on Github, and engaging my current work with my original theoretical frame. 
 
 Specifically, I will explore some of my *Guiding Questions* from my [Proposal Summary](/proposal_summary.md), in an attempt to combine theory with practice:
 * First, how do traditional annotation tools and practices support a prescriptive approach to teaching close reading: how do they create a standardized method or process in responding to texts?
 * Second, more specifically, do certain features, such as colors, categories, or tags, for example, actually limit the kinds of responses students might have without these prompts? In other words, do these options actually create a structure that confines student thinking?
 * Third, from the opposite perspective, how can giving students more nonverbal options in an annotation tool provoke them toward more spontaneous insights?
 
-To answer these questions, I will examine in depth the existing annotation tools listed in the "Environmental Scan" section of the Summary. These tools include *Ponder*, [*Lacuna Stories*](https://github.com/PoeticMediaLab/Lacuna), and [*Annotation Studio*](https://github.com/hyperstudio/Annotation-Studio), to which I will add the foundational [*Annotator.js*](https://github.com/openannotation). For these projects, I will look at case studies (academic research) and the codebase. The main goal during this phase is to understand how I can further enhance, trouble, or contextualize the work I've done during the *Building* phase.
+To answer these questions, I will examine in depth the existing annotation tools listed in the "Environmental Scan" section of the Summary. These tools include [*Ponder*](https://www.ponder.co/welcome/), [*Lacuna Stories*](https://github.com/PoeticMediaLab/Lacuna), and [*Annotation Studio*](https://github.com/hyperstudio/Annotation-Studio), to which I will add the foundational [*Annotator.js*](https://github.com/openannotation). For these projects, I will look at case studies (academic research) and the codebase. The main goal during this phase is to understand how I can further enhance, trouble, or contextualize the work I've accomplished during the *Building* phase.
 
 ### April 2019
 
-This is the **Sharing** phrase, the last step of the project. Here, I will try to push my changes to the Hyp master project, or find my own way of distributing the work, including essays or talks. The main goal is to plan ways to publicize and share what I have learned with the academic community. 
+This is the **Sharing** phrase, the last step of the project. Here, I will try to push my changes to the Hyp master project, or find my own way of distributing the work, including essays or talks. (I'm already slotted to give a talk at the [Northeast Modern Language Association Conference](https://www.buffalo.edu/nemla/convention.html) in Washington DC in late March.) The main goal is to plan further ways to publicize and share what I have learned with the academic community. 
