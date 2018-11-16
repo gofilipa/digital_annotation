@@ -2,9 +2,9 @@ The Independent Study work (to be completed during Spring of 2019) is divided in
 
 ### November - December 2018
 
-Reaching out---
+This is the **Preliminary Period** during which I will reaching out to folks at Hypothes.is and Github contributors. The goal is to alert them to my project ideas and ask for input or suggestions/preferences, if they have any.
 
-This is a preliminary period during which I will do research on the Hypothes.is codebase and set up my development environment to make changes to Hyp. I may also have to spend some weeks brushing up on coding languages if needed.
+Besides making contact with these folks, I will do research on the Hypothes.is codebase and set up my development environment to make changes. I may also have to spend some weeks brushing up on coding languages / UI design if needed.
 
 ### January-February 2019
 
@@ -15,7 +15,7 @@ In this phase, I tackle the work according to three separate "problems":
 - *the API problem*---how do I get this command (probably ajax) into the API, formatted and streamlined?
 - *the Database problem*---where is it stored?
 
-### March
+### March 2019
 
 The **Breaking** phase is an opportunity for me to push the boundaries of whatever I have accomplished during the *Building* phase. Here I will focus on two things: responding to contributor requests on Github, and engaging my work with my original theoretical frame. 
 
@@ -26,6 +26,6 @@ Specifically, I will explore some of my *Guiding Questions* from my [Proposal Su
 
 To answer these questions, I will examine in depth the existing annotation tools listed in the "Environmental Scan" section of the Summary. These tools include *Ponder*, [*Lacuna Stories*](https://github.com/PoeticMediaLab/Lacuna), and [*Annotation Studio*](https://github.com/hyperstudio/Annotation-Studio), to which I will add the foundational [*Annotator.js*](https://github.com/openannotation). For these projects, I will look at case studies (academic research) and the codebase. The main goal during this phase is to understand how I can further enhance, trouble, or contextualize the work I've done during the *Building* phase.
 
-### April
+### April 2019
 
 This is the **Sharing** phrase, the last step of the project. Here, I will try to push my changes to the Hyp master project, or find my own way of distributing the work, including essays or talks. The main goal is to plan ways to publicize and share what I have learned with the academic community. 
