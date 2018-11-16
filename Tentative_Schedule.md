@@ -8,7 +8,7 @@ Besides making contact with these folks, I will do research on the Hypothes.is c
 
 ### January-February 2019
 
-This is the **Building** phase, during which I will create the MVP (Minimal Viable Product). My goal is to implement a single change to Hyp that adds multicolor functionality to the highlighter tool. During this time, I will focus solely on the Hyp codebase, and aim for my specific objective. This month will be somewhat unstructured, because I cannot anticipate the obstacles that are sure to arise. 
+This is the **Building** phase, during which I will create the MVP (Minimal Viable Product). My goal is to implement a single change to H that adds multicolor functionality to the highlighter tool. During this time, I will focus solely on the H codebase, and aim for my specific objective. This month will be somewhat unstructured, because I cannot anticipate the obstacles that are sure to arise. 
 
 In this phase, I tackle the work according to three separate "problems":
 - *the UI problem*---what does the element look like, where is it called throughout the code?
@@ -28,4 +28,4 @@ To answer these questions, I will examine in depth the existing annotation tools
 
 ### April 2019
 
-This is the **Sharing** phrase, the last step of the project. Here, I will try to push my changes to the Hyp master project, or find my own way of distributing the work, including essays or talks. (I'm already slotted to give a talk at the [Northeast Modern Language Association Conference](https://www.buffalo.edu/nemla/convention.html) in Washington DC in late March.) The main goal is to plan further ways to publicize and share what I have learned with the academic community. 
+This is the **Sharing** phrase, the last step of the project. Here, I will try to push my changes to the H master project, or find my own way of distributing the work, including essays or talks. (I'm already slotted to give a talk at the [Northeast Modern Language Association Conference](https://www.buffalo.edu/nemla/convention.html) in Washington DC in late March.) The main goal is to plan further ways to publicize and share what I have learned with the academic community. 
