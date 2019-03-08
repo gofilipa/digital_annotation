@@ -1,22 +1,35 @@
 ## 3.8.19: Making it Purple
+From the Lab
 
-The goal for today is simple---to change the highlighter color from YELLOW to RED on the development version. 
+The goal for today is simple---to change the highlighter color from YELLOW to PURPLE on the development version in the lab. 
 
-Looking at the CSS file for the adder. It's in the variables.scss file, in the styles directory (src/styles/variables.scss). In there, the highlighter is defined thus:
+I'm looking at the CSS file for the adder. It's in the variables.scss file, in the styles directory (src/styles/variables.scss). The highlighter is defined thus:
 
 	$highlight-color: rgba(255, 255, 60, 0.3);
 
-Now I need to look a little bit at RGB color schemes, according to w3schools. This is the the Red-green-blue-alpha (RGBA) model. Turns out these color values are an extension of RGB color values with an alpha channel that specifies the opacity of the color.  The red defines an intensity of red as an integer between 0 and 255 (it can also be represented as a percentage), and the same goes for green and blue. The alpha defines the opacity as a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+Now I need to look a little bit at RGB color schemes, with some help from w3schools. This is the the Red-green-blue-alpha (RGBA) model. Turns out these color values are an extension of RGB color values with an alpha channel that specifies the opacity of the color.  The red defines an intensity of red as an integer between 0 and 255 (it can also be represented as a percentage), and the same goes for green and blue. The alpha defines the opacity as a number between 0.0 (fully transparent) and 1.0 (fully opaque).
 
 I'm trying purple (technically, Electric Indigo) which I got from this [website](http://www.flatuicolorpicker.com/purple-rgba-color-code). Though I'm changing the opacity to .3, to match the original. This is the code:
 
 	rgba(140, 20, 252, .3)
 
-And here's what I got!
+And here's what I got! See how the highlight is purple?
 
 ![makingitpurple](images/makingitpurple.png)
 
-This didn't actually show up until I quit everything, restarted the dev server, and unpacked the extention. It seems like that will always have to be my process to see changes. 
+This color change didn't actually show up until I quit everything, restarted the dev server, and unpacked the extention. It seems like that will always have to be my process to see changes. 
+
+Besides this change, I also spent some time today learning more about Git. Since I'll be using it on two computers (my own and the lab's) I need to be careful about keeping the remote repository updated with the current version. This was easy enough to do after some googling. 
+
+	$ git remote add [urlformyrepo]
+
+When I get back to my home computer, I will have to run this to download all the data from the remote:
+
+	$ git fetch <remote>
+
+And then initialize(?), add, commit, push as usual. More info on these steps can be found [here](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes).
+
+One issue is whether or not I should create branches / learn about branching / the other functionalities of Git. It seems like a pretty steep learning curve, so I'm not completely sure. 
 
 
 ## 3.7.19 Replicating development environment
