@@ -1,3 +1,24 @@
+## 3.8.19: Making it Purple
+
+The goal for today is simple---to change the highlighter color from YELLOW to RED on the development version. 
+
+Looking at the CSS file for the adder. It's in the variables.scss file, in the styles directory (src/styles/variables.scss). In there, the highlighter is defined thus:
+
+	$highlight-color: rgba(255, 255, 60, 0.3);
+
+Now I need to look a little bit at RGB color schemes, according to w3schools. This is the the Red-green-blue-alpha (RGBA) model. Turns out these color values are an extension of RGB color values with an alpha channel that specifies the opacity of the color.  The red defines an intensity of red as an integer between 0 and 255 (it can also be represented as a percentage), and the same goes for green and blue. The alpha defines the opacity as a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+I'm trying purple (technically, Electric Indigo) which I got from this [website](http://www.flatuicolorpicker.com/purple-rgba-color-code). Though I'm changing the opacity to .3, to match the original. This is the code:
+
+	rgba(140, 20, 252, .3)
+
+And here's what I got!
+
+![makingitpurple](images/makingitpurple.png)
+
+This didn't actually show up until I quit everything, restarted the dev server, and unpacked the extention. It seems like that will always have to be my process to see changes. 
+
+
 ## 3.7.19 Replicating development environment
 on home computer
 
