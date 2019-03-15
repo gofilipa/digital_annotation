@@ -1,3 +1,27 @@
+
+## 3.15.19: Charting the Click
+From the Lab
+
+Today I am tempted by a little bit of an ambitious goal. I'm would like to (hopefully) begin building the new component of the interface which will contain the option for multiple highlighters. This is really, the crux of my project. 
+
+How to proceed with achieving this goal? I doubt I can do it in one day. I ought to break it down into steps, according to Agile Methodology principles.
+
+I think the first step is to roughly chart the process of the user's selecting text, the "adder toolbar" (as it's called in the code) appearing on the screen, and then activating the highlighter element to change the color of the selected text. After getting a sense of the relevant code from the Client repo, I can then start sketching the elements of my own. 
+
+So first, I will *chart the click*:
+
+The click here means the process that occurs when a user clicks the mouse button and pans over a piece of text, then releases the mouse button. In the process of making the selection, the text is blue, but once the mouse button is released, it becomes yellow.
+
+	How [Selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection) works, using anchors: 
+
+	A **selection** object represents the range of text selected by the user or the current position of the caret. To obtain a Selection object for examination or modification, call Window.getSelection(). The anchor is where the user began the selection and the focus is where the user ends the selection. If you make a selection with a desktop mouse, the anchor is placed where you pressed the mouse button and the focus is placed where you released the mouse button.
+
+	There are various properties and methods to selection, including anchorNode, anchorOffset, addRange(), collapse(), etc.
+
+... to be continued
+
+Need to take some time to read [this](https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/) again slowly. 
+
 ## 3.8.19: Making it Purple
 From the Lab
 
