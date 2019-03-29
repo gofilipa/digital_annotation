@@ -1,6 +1,6 @@
 ## 3.29.19 Layering Colors and Anchoring: NeMLA and Udell
 
-It's been a couple of weeks since I worked on this. Mostly because I've been busy preparing a conference paper on this project, which is still mostly theoretical at this point. I'm uploading [the full paper here](papers/NeMLA_talk_March2019.pdf), but I thought I'd take some space below to summarize my key takeaway from the conference paper, which shows where my thinking is heading on this projects (my thoughts being far ahead of my practical accomplishments so far).
+It's been a couple of weeks since I worked on this. Mostly because I've been busy preparing a conference paper on this project, which is still mostly theoretical at this point. I'm uploading [the full paper here](../papers/NeMLA_talk_March2019.pdf), but I thought I'd take some space below to summarize my key takeaway from the conference paper, which shows where my thinking is heading on this projects (my thoughts being far ahead of my practical accomplishments so far).
 
 > A way that I am interested in using color is by 
 > assigning different affects to specific colors, 
@@ -54,11 +54,11 @@ Today, in the New Media Lab, I took some time to read [this incredible article](
 
 I spent most of my time trying to understand how the simple script works, looking up the various libraries and functions to try to wrap my mind around it all. 
 
-I learned a lot about Javascript just by googling different parts of the script. And I also outlined the parts of the script in my [Javascript Notes](/notes/javascript_notes.md)
+I learned a lot about Javascript just by googling different parts of the script. And I also outlined the parts of the script in my [Javascript Notes](javascript_notes.md)
 
 The main takeaway here is that Udell's script uses *anchoring*, *tagging* and *wrapping* to append colors to highlighted text. Ultimately, he uses inline CSS ("background-color") to "tag" (.wrap()) the text (as an HTML element with &lt;span&gt;) with color. Here is the last line of the code:
 
->	$(nodes).wrap('<span style="background-color:' + tag + '" title="' + text + '"></span>')
+>	$(nodes).wrap('&lt;span style="background-color:' + tag + '" title="' + text + '"&gt;&lt;/span&gt;')
 
 This idea is very interesting, but it isn't exactly what I want to do, which is to create a separate interface element for selecting colors. As you can see from my conference paper, the divorce of color from text is central to my project, which explores how nonverbal or preverbal affects engage the reading process. I would rather, then, that the user select a color by clicking a color instead of typing a word. That being said, it's impressive how Udell's code manages to use Hypothes.is built-in anchoring functionality in order to easily attach colors to text.  
 

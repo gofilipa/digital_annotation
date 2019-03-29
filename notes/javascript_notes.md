@@ -32,4 +32,4 @@ success: attach_annotations
 - wraps Nodes with CSS
 	- this uses inline CSS ("background-color") to "tag" (.wrap()) the text (as an HTML element with &lt;span&gt;) with color. Here is the last line of the code:
 
->	$(nodes).wrap('<span style="background-color:' + tag + '" title="' + text + '"></span>')
+>	$(nodes).wrap('&lt;span style="background-color:' + tag + '" title="' + text + '"&gt;&lt;/span&gt;')
