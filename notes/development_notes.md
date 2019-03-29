@@ -6,7 +6,7 @@ It's been a couple of weeks since I worked on this. Mostly because I've been bus
 > assigning different affects to specific colors, 
 > using color theory as a guide. 
 
-![Plutchik's Wheel of Emotions](images/wheel_of_emotions.png)
+![Plutchik's Wheel of Emotions](../images/wheel_of_emotions.png)
 
 > Here, you see pictured a “wheel of emotions” 
 > by Robert Plutchik, a professor of psychology, who 
