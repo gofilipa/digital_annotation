@@ -1,5 +1,68 @@
+## 3.29.19 Layering Colors and Anchoring: NeMLA and Udell
 
-## 3.15.19: Charting the Click
+It's been a couple of weeks since I worked on this. Mostly because I've been busy preparing a conference paper on this project, which is still mostly theoretical at this point. I'm uploading [the full paper here](papers/NeMLA_talk_March2019.pdf), but I thought I'd take some space below to summarize my key takeaway from the conference paper, which shows where my thinking is heading on this projects (my thoughts being far ahead of my practical accomplishments so far).
+
+> A way that I am interested in using color is by 
+> assigning different affects to specific colors, 
+> using color theory as a guide. 
+
+![Plutchik's Wheel of Emotions](images/wheel_of_emotions.png)
+
+> Here, you see pictured a “wheel of emotions” 
+> by Robert Plutchik, a professor of psychology, who 
+> transposes his own theory of emotions into a color 
+> wheel. The differences in hue on the wheel indicate 
+> changes in quality, and differences in saturation 
+> indicates changes in intensity, of emotion. There 
+> are eight primary emotions, which run along the 
+> second ring: these are joy, trust, fear, surprise, 
+> sadness, disgust, anger and anticipation. The more 
+> saturated colors on the inner ring represent more 
+> intense forms of the emotion, while the brighter 
+> colors on the outer rings are milder. For example,
+> apprehension (light green) is a mild form of fear, 
+> while rage (dark red) is an intense form of anger. 
+> Plutchik also theorized emotional dyads, which are 
+> feelings composed of two emotions. You can see the 
+> dyad between fear and surprise, which is awe, or 
+> between joy and trust, which is love. 
+
+> I imagine that students might use these colors not 
+> only to highlight text according to their feelings
+>  or gut reactions, but also to engage with other 
+> students’ highlights in the form of layering. One 
+> of the benefits of the Hypothes.is highlighter is 
+> that it builds a degree of opacity to each 
+> highlight, so that multiple highlights on the same
+> piece of text will appear more saturated, and that 
+> colors can mix into secondary and tertiary 
+> combinations. I wonder what would happen, for 
+> example, if one student were to highlight a piece 
+> of text as orange, for “anticipation”, and another 
+> were to highlight that same piece as red, for 
+> “anger”. The resulting dyad, which would be 
+> red-orange, signifies “aggressiveness” on the 
+> chart. How does this result change the way we read 
+> the text? Does engaging underlying feelings that 
+> occur during reading enhance the way we understand 
+> we understand language or literary devices? My 
+> sense is that confronting and attending to these 
+> feelings will open up ways that students connect to 
+> what they read. 
+
+Today, in the New Media Lab, I took some time to read [this incredible article](https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/) by H developer, Jon Udell, once again, very slowly. In it, Udell uses Hypothes.is tagging (via anchoring) functionality in order to attach highlights to annotated text. 
+
+I spent most of my time trying to understand how the simple script works, looking up the various libraries and functions to try to wrap my mind around it all. 
+
+I learned a lot about Javascript just by googling different parts of the script. And I also outlined the parts of the script in my [Javascript Notes](/notes/javascript_notes.md)
+
+The main takeaway here is that Udell's script uses *anchoring*, *tagging* and *wrapping* to append colors to highlighted text. Ultimately, he uses inline CSS ("background-color") to "tag" (.wrap()) the text (as an HTML element with &lt;span&gt;) with color. Here is the last line of the code:
+
+>	$(nodes).wrap('<span style="background-color:' + tag + '" title="' + text + '"></span>')
+
+This idea is very interesting, but it isn't exactly what I want to do, which is to create a separate interface element for selecting colors. As you can see from my conference paper, the divorce of color from text is central to my project, which explores how nonverbal or preverbal affects engage the reading process. I would rather, then, that the user select a color by clicking a color instead of typing a word. That being said, it's impressive how Udell's code manages to use Hypothes.is built-in anchoring functionality in order to easily attach colors to text.  
+
+## 3.15.19
 From the Lab
 
 Today I am tempted by a little bit of an ambitious goal. I'm would like to (hopefully) begin building the new component of the interface which will contain the option for multiple highlighters. This is really, the crux of my project. 
@@ -12,15 +75,7 @@ So first, I will *chart the click*:
 
 The click here means the process that occurs when a user clicks the mouse button and pans over a piece of text, then releases the mouse button. In the process of making the selection, the text is blue, but once the mouse button is released, it becomes yellow.
 
-	How [Selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection) works, using anchors: 
-
-	A **selection** object represents the range of text selected by the user or the current position of the caret. To obtain a Selection object for examination or modification, call Window.getSelection(). The anchor is where the user began the selection and the focus is where the user ends the selection. If you make a selection with a desktop mouse, the anchor is placed where you pressed the mouse button and the focus is placed where you released the mouse button.
-
-	There are various properties and methods to selection, including anchorNode, anchorOffset, addRange(), collapse(), etc.
-
 ... to be continued
-
-Need to take some time to read [this](https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/) again slowly. 
 
 ## 3.8.19: Making it Purple
 From the Lab
