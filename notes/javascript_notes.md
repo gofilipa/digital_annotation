@@ -1,3 +1,5 @@
+[Useful article](https://medium.com/@jacobwarduk/how-to-correctly-use-preventdefault-stoppropagation-or-return-false-on-events-6c4e3f31aedb) on how Javascript engages with HTML. 
+
 How [Selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection) works, using anchors: 
 
 - A **selection** object represents the range of text selected by the user or the current position of the caret. To obtain a Selection object for examination or modification, call Window.getSelection(). The anchor is where the user began the selection and the focus is where the user ends the selection. If you make a selection with a desktop mouse, the anchor is placed where you pressed the mouse button and the focus is placed where you released the mouse button.

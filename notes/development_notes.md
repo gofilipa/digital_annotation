@@ -1,8 +1,42 @@
+## 4.19.19 Charting the Click, part II
+
+About a month ago, I began the process of "charting the click", from which I got sidetracked. After spending more time looking at the code, and after succeeding in making some changes to the UI, I'm going to give it another shot. 
+
+First order of business is to break down the HTML file for the adder button.
+
+	<hypothesis-adder-toolbar class="annotator-adder js-adder">
+	  <hypothesis-adder-actions class="annotator-adder-actions">
+	    <button class="annotator-adder-actions__button h-icon-annotate js-annotate-btn">
+	      <span class="annotator-adder-actions__label" data-action="comment">Annotate</span>
+	    </button>
+	    <button class="annotator-adder-actions__button h-icon-highlight js-highlight-btn">
+	      <span class="annotator-adder-actions__label" data-action="highlight">Color</span>
+	    </button>
+	    <button class="annotator-adder-actions__button h-icon-highlight js-highlight-btn">
+	      <span class="annotator-adder-actions__label" data-action="highlight">Color Again</span>
+	    </button>
+	  </hypothesis-adder-actions>
+	</hypothesis-adder-toolbar>
+
+This file (adder.html) is rather small but it packs a lot of information. Let's start with the first element, the 
+
+**hypothesis-adder-toolbar**
+- an HTML object that encompasses **hypothesis-adder-actions**, which contains two buttons for "Annotate" and "Highlight".
+- the classes in this object, **annotator-adder** and **js-adder**, link to the adder.scss and adder.js pages. The SCSS page contains directions for animating the adder when the User makes a text selection, including fading-in, popping up, orientation. The JS page has directions for showing and hiding the adder. For example, from the SCSS page:
+		.annotator-adder--arrow-down.is-active {
+		  animation-name: adder-fade-in, adder-pop-up;
+		} 
+
+**buttons**
+- there are two of them, for "Annotate" and "Highlight"
+
+To be continued.... 
+
 ## 4.9.19 Making A Purple Button
 
 Today I spent some time messing around with the CSS and HTML files for the Adder (adder.scss & adder.html), and the Variables files (variables.scss), which defines all the colors in the H Client. The end result was an Adder button that includes the label "Color" rather than "Highlight", and a highlighted text that appears purple. I also played around with making the labels and icons temporarily purple, which was fun but ulimately unproductive.
 
-This is a small step, but it's a key one. Next I'm going to try to expand the adder toolbar to include more buttons, hopefully with different colors. 
+This is a small step, but it's a key one. Next I'm going to try to expand the adder toolbar to include more buttons, hopefully with different colors. As of now, when I try to expand the buttons (by copying/pasting a new button below the original), they break. Only two of them will work at a given time. 
 
 ## 3.29.19 Layering Colors and Anchoring: NeMLA and Udell
 
@@ -100,7 +134,7 @@ I'm trying purple (technically, Electric Indigo) which I got from this [website]
 
 And here's what I got! See how the highlight is purple?
 
-![makingitpurple](images/makingitpurple.png)
+![makingitpurple](../images/makingitpurple.png)
 
 This color change didn't actually show up until I quit everything, restarted the dev server, and unpacked the extention. It seems like that will always have to be my process to see changes. 
 
