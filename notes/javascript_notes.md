@@ -7,8 +7,8 @@
 **Copes, Flavio. [*The Complete Javascript Handbook*](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c). *Medium*. Oct. 30, 2018.**
 - Reference book for most recent Javascript elements as well as overview of all components. Easily searched.
 
-**Erickson, Mark. ["React-Redux Links"](https://github.com/markerikson/react-redux-links). *Github*. 
-- Curated tutorial and resource links collected on React, Redux, ES6, and more.**
+**Erikson, Mark. ["React-Redux Links"](https://github.com/markerikson/react-redux-links). *Github*.** 
+- Curated tutorial and resource links collected on React, Redux, ES6, and more.
 
 **Greif, Sacha. ["A Study Plan to Cure Javascript Fatigue"](https://medium.freecodecamp.org/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1). *Medium*. October 31, 20016.**
 - A clear plan for getting up and running with Javascript, using the React framework. 
