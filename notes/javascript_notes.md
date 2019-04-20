@@ -4,7 +4,7 @@
 ### Aguinaga, Jose. ["How it Feels to Learn Javascript in 2016"](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f). *Hackernoon*. Oct. 3, 2016.
 - Darkly comical mock dialogue exposing the absurdity of the proliferation of Javascript tools/libraries in 2016.
 
-### Copes, Flavio. [*The Complete Javascript Handbook*](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c). **Mediu*. Oct. 30, 2018.
+### Copes, Flavio. [*The Complete Javascript Handbook*](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c). *Medium*. Oct. 30, 2018.
 - Reference book for most recent Javascript elements as well as overview of all components. Easily searched.
 
 ### Erickson, Mark. ["React-Redux Links"](https://github.com/markerikson/react-redux-links). *Github*. 
