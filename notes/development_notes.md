@@ -1,3 +1,97 @@
+## 5.2.19 Meeting with Joe
+
+Last week, Joe was nice enough to meet with me to discuss potential directions for modifying Hypothes.is. Below are the notes from our meeting, and some suggestions for next steps. 
+
+First, I came to Joe with the following files, where I had been spending most of my time, and which define and animate the "adder," or the highlighter/commenting toolbar. As far as I could tell, there are four documents that define this "adder":
+
+- "**adder.html**" - this is the short html file for the buttons, both the "Annotate" and "Highlight" button that pop up together once you make a text selection. I was able to make more buttons (which didn't actually work when pressed) on the toolbar by duplicating the html within the file.
+- "**adder.scss**" - this is the styling for the adder, including labels, colors, animations. I was able to change the color/appearance of the adder buttons by messing around here, calling new colors from the variables file.
+- "**variables.scss**" - this defines all the colors to be used in the UI. Starting at line 124, I was able to change the color of the highlighter, from yellow to purple, and it worked. I was also able to create a new palette for purple that I called throughout the adder.scss file. 
+- "**adder.js**" - this is the javascript that runs the adder, navigates the DOM, manages its visibility, and a whole lot of other stuff I do not understand. 
+
+Up to now, I've been messing with **adder.html**, **adder.scss**, and **variables.scss** in order to expand the adder toolbar for more buttons which indicate different colors that you can apply to highlight the selection. However, while I'm able to create more buttons on adder.html, just by copy/pasting the html code for the "highlight" button and styling them, *I've not been able to affect the selected text itself*---that is, the text on the page that I want to highlight---*beyond just changing the default highlight color*. In other words, I'm able to change the default highlight color to purple (or whatever color), but I cannot add more than one color, or more than one working highlighter button, because then the tool just breaks. I assume the issue is with the **adder.js** file, which I don't really understand.
+
+Joe's response to me was enlightenting, because it turns out that the bulk of adder is actually configured in a file called **guest.coffee**. Joe explained that it this file, which also uses code from **highlighter/dom-wrap-highlighter/index.coffee**. According to Joe, the code works in more or less the order below:
+
+	adder.js:
+	176: handleCommand(event, options.onHighlight)
+
+	guest.coffee:
+	57: this.adderCtrl = new adder.Adder(…) #onHighlight calls self.createHighlight() on line 63
+	354: this.createAnnotation({$highlight: true})
+	348: targets.then(-> self.anchor(annotation))
+	293: anchor = locate(target).then(highlight) #we care about call to highlight
+	240: highlights = highlighter.highlightRange(normedRange) #doesn’t pass cssClass as second param
+
+	highlighter/dom-wrap-highlighter/index.coffee:
+	line 10: highlightRange() #could be passed cssClass
+
+So I'm going to type out this process line by line:
+
+adder.js:
+
+176: 
+
+**handleCommand(event, options.onHighlight)**
+
+The event listener, a constructor with two parameters, which creates an object with parameters "event" and "onHighlight", that guest.coffee file then figures out what to do.
+
+guest.coffee:
+
+63:
+
+**self.createHighlight()**
+
+onHighlight option from adder.js calls "self.createHighlight()"
+
+354: 
+
+**createHighlight: -> this.createAnnotation({$highlight: true})**
+
+Defines the funciton "createHighlight" to "createAnnotation".
+
+
+348: 
+
+**targets.then(-> self.anchor(annotation))**
+
+For the targets, runs a method called "anchor".
+
+293: 
+
+**anchor = locate(target).then(highlight)**
+
+Makes a call to highlight, which we care about.
+
+240: 
+
+**highlights = highlighter.highlightRange(normedRange)** 
+
+Calls variable "highlighter" (which is a module), doesn’t pass cssClass as second param, which we might pass.
+
+highlighter/dom-wrap-highlighter/index.coffee:
+
+line 10: 
+
+**highlightRange()**
+
+This could be passed cssClass
+
+According to Joe, the best entryway is on line 240 of the guest.coffee file. I could do the following: 
+-  Have something in line 240 of guest.coffee that sends the color of the specific class to the **highlight** variable. Make a CSS class to pass as a second parameter to highlightRange. 
+	- Create a dropdown in menu in HTML, with one option for each color. The new code in guest.coffee would then grab back that value on line 240.
+	- Create a CSS class to highlightRange, in adder.scss and/or variables.scss, make one class for each color, then combine into one class which is passed into line 240. 
+	- Inspect HTML and respond to it, so you will know what class to pass in 240.
+- Or have a switch statement for each color, passing the class to 240. 
+
+
+Some miscellaneous notes from our meeting:  
+- adder.js 168-172, has an event listener with a dependency injection ("when this happens, do this"). QuerySelector(HIGHLIGHT_BTN_SELECTOR), is the first thing that makes the class. It searches the page for HIGHLIGHT_BTN_SELECTOR being clicked. 
+- this.element is the adder box.  
+- Think of this project as three parts: Get colors, Save colors, Retrieve colors. Once I figure out how to get colors, I will need to figure out saving (appending metadata, color) and retrieving. 
+- to understand guest.coffee and saving/retrival, read up on Promises and Events.
+- Working with asynchronous javascript. 
+
 ## 4.19.19 Charting the Click, part II
 
 About a month ago, I began the process of "charting the click", from which I got sidetracked. After spending more time looking at the code, and after succeeding in making some changes to the UI, I'm going to give it another shot. 
@@ -21,7 +115,7 @@ First order of business is to break down the HTML file for the adder button.
 This file (adder.html) is rather small but it packs a lot of information. Let's start with the first element, the 
 
 **hypothesis-adder-toolbar**
-- an HTML object that encompasses **hypothesis-adder-actions**, which contains two buttons for "Annotate" and "Highlight".
+- an HTML object that encompasses ... **hypothesis-adder-actions**, which contains two buttons for "Annotate" and "Highlight".
 - the classes in this object, **annotator-adder** and **js-adder**, link to the adder.scss and adder.js pages. The SCSS page contains directions for animating the adder when the User makes a text selection, including fading-in, popping up, orientation. The JS page has directions for showing and hiding the adder. For example, from the SCSS page:
 		.annotator-adder--arrow-down.is-active {
 		  animation-name: adder-fade-in, adder-pop-up;
