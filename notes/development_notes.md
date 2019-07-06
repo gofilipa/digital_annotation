@@ -4,7 +4,8 @@ The advice I've been given for the next step is to create a dropdown menu off th
 
 After playing around with it and looking at samples online, I managed to throw something together. I've added a third button to the adder menu, labeled "colors", which expands into a dropdown menu when you hover over it. The dropdown has three labels: blue, red, and yellow (primary colors). Of course the buttons don't work yet.
 
-![Adding Color Button](../images/colorsbutton.png =100x20)
+<image src="../images/colorsbutton.png" width="200">
+
 ![Adding Dropdown Menu](../images/dropdownmenu.png =100x20)
 
 As you can see, the dropdown is pretty ugly. The next step is to style the dropdown so that it is consistent with the rest of the adder style. Then I'll worry about functionality. 
