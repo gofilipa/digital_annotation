@@ -1,3 +1,13 @@
+## 7.5.19 Creating a Dropdown
+
+The advice I've been given for the next step is to create a dropdown menu off the adder which will give options for annotating in different colors. 
+
+After playing around with it and looking at samples online, I managed to throw something together. I've added a third button to the adder menu, labeled "colors", which expands into a dropdown menu when you hover over it. The dropdown has three labels: blue, red, and yellow (primary colors). Of course the buttons don't work yet. The next step is to style the dropdown so that it is consistent with the rest of the adder style. Then I'll worry about functionality. 
+
+![Adding Color Button](../images/colorsbutton.png)
+![Adding Dropdown Menu](../images/dropdownmenu.png)
+
+
 ## 5.2.19 Meeting with Joe
 
 Last week, Joe was nice enough to meet with me to discuss potential directions for modifying Hypothes.is. Below are the notes from our meeting, and some suggestions for next steps. 
