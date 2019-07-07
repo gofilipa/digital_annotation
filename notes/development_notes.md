@@ -1,3 +1,11 @@
+## 7.6.19 Styling the Dropdown
+
+Today I spent more time playing around with the buttons on the adder.scss and adder.html files. There was lots of confusion about the function of various classes, and why they are attached to specific elements. For example, why are some classes attached to the span element, and not the button? Why is the "data-action" attribute attachted to span and not button?
+
+I styled the button in a way that's more attractive, trimming down the size of the dropdown menu so it doesn't totally overlap the button. Also, I got the dropdown menu to *work*, which I wasn't expecting. When you click on either "Blue", "Red", or "Yellow", the thing will highlight in purple. Pretty cool. 
+
+Next step would be to get the dropdown menu to appear below the adder buttons. Then to work on the font, and maybe adding an icon for each color. 
+
 ## 7.5.19 Creating a Dropdown
 
 The advice I've been given for the next step is to create a dropdown menu off the adder which will give options for annotating in different colors. 
