@@ -148,7 +148,7 @@ $adder-transition-duration: 80ms;
 .dropdown-content li {
   box-shadow: none;
   font-family: h;
-  font-size: 18px;
+  font-size: 14px;
   background: $white;
   color: $gray-dark;
   display: flex;
@@ -167,6 +167,12 @@ $adder-transition-duration: 80ms;
 .dropdown-content li:hover {background-color: #ddd;}
 
 // Show the dropdown menu on hover 
+// trying to get the dropdown to show below the current menu... but not working. Adding position: relative or absolute just creates this whole box beneath. It expands the adder. 
 .dropdown:hover .dropdown-content {
   display: block;
+  margin-top: 40px;
+}
+
+.red {
+  color: red;
 }

@@ -1,3 +1,9 @@
+## 7.11.19 Styling the Dropdown II
+
+Still working with the appearance of the dropdown. Was able to move its position (so it doesn't overlap with the adder), and to add highlight icons to each button. Took me a while to find the icon in the codebase, which uses icomoon. Turns out I just had to copy and paste the icon "class" in another part of the button element.
+
+Next step, coloring the icons. The red button will have red icon, etc. This is proving difficult to do because I cannot find the source of the icon to change the color. Also there are issues with cascading styles that are cancelling my red. Will need to read up more on the cascade and icomoon to fix this, I think. 
+
 ## 7.6.19 Styling the Dropdown
 
 Today I spent more time playing around with the buttons on the adder.scss and adder.html files. There was lots of confusion about the function of various classes, and why they are attached to specific elements. For example, why are some classes attached to the span element, and not the button? Why is the "data-action" attribute attachted to span and not button?
@@ -12,13 +18,13 @@ The advice I've been given for the next step is to create a dropdown menu off th
 
 After playing around with it and looking at samples online, I managed to throw something together. I've added a third button to the adder menu, labeled "colors", which expands into a dropdown menu when you hover over it. The dropdown has three labels: blue, red, and yellow (primary colors). Of course the dropdown buttons don't work yet.
 
-**The new adder button, with "colors":**
+*The new adder button, with "colors":*
 
-<image src="../images/colorsbutton.png" width="400">
+<center><image src="../images/colorsbutton.png" width="400"></center>
 
-**With the dropdown menu activated:**
+*And with the dropdown menu activated:*
 
-<image src="../images/dropdownmenu.png" width="400">
+<center><image src="../images/dropdownmenu.png" width="400"></center>
 
 As you can see, the dropdown is pretty ugly. The next step is to style the dropdown so that it is consistent with the rest of the adder style. Then I'll worry about functionality. 
 

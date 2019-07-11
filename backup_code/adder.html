@@ -3,16 +3,15 @@
     <button class="annotator-adder-actions__button h-icon-annotate js-annotate-btn">
       <span class="annotator-adder-actions__label" data-action="comment">Annotate</span>
     </button>
-
-    <!--  somewhere here I need to add a class that describes a dropdown?
-          trying code from here: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
-
+    <!--
+        the class "js-highlight-btn" sends us to adder.js -> guest.coffee -> index.coffee to handle the highlighting. It grabs the color from variables.scss.
+    -->
     <button class="annotator-adder-actions__button h-icon-highlight js-highlight-btn dropdown">
       <span class="annotator-adder-actions__label" data-action="highlight">Colors</span>
       <div class="dropdown-content">
-          <li>Red</li>
-          <li>Blue</li>
-          <li>Yellow</li>
+          <li class="annotator-adder-actions__label h-icon-highlight red" data-action="highlight">Red</li>
+          <li class="annotator-adder-actions__label h-icon-highlight" data-action="highlight" style="color: blue;">Blue</li>
+          <li class="annotator-adder-actions__label h-icon-highlight" data-action="highlight" style="color: yellow;">Yellow</li>
     </button>
   </hypothesis-adder-actions>
 </hypothesis-adder-toolbar>
