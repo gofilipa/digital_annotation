@@ -170,9 +170,11 @@ $adder-transition-duration: 80ms;
 // trying to get the dropdown to show below the current menu... but not working. Adding position: relative or absolute just creates this whole box beneath. It expands the adder. 
 .dropdown:hover .dropdown-content {
   display: block;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
-.red {
-  color: red;
+.div {
+  @include icons {
+  color: red; // Make any icon red.
+  }
 }

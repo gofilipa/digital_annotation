@@ -1,8 +1,14 @@
-## 7.11.19 Styling the Dropdown II
+## 7.11-12.19 Styling the Dropdown II
 
 Still working with the appearance of the dropdown. Was able to move its position (so it doesn't overlap with the adder), and to add highlight icons to each button. Took me a while to find the icon in the codebase, which uses icomoon. Turns out I just had to copy and paste the icon "class" in another part of the button element.
 
-Next step, coloring the icons. The red button will have red icon, etc. This is proving difficult to do because I cannot find the source of the icon to change the color. Also there are issues with cascading styles that are cancelling my red. Will need to read up more on the cascade and icomoon to fix this, I think. 
+The next step, coloring the icons, proved extremely time consuming. I wanted each icon to display the color indicated in the colors label. First, I spent a lot of time trying to find the source of the icon to change the color, ended up going on icomoon, from where I still couldn't figure out how to do it. I also tried a bunch of different css solutions, coloring the h-icon-highlight to red, for example. This worked, but it made all the icons red. There's no way for me to do this just to one icon. 
+
+I finally ended up by using in inline css rule in the html to color the entire button. This is less elegant than I hoped, but at this point I need to move on. I'm going to leave it as is and start thinking about functionality. 
+
+Here's what the dropdown looks like now:
+
+<center><image src="../images/dropdownstyled.png" width="400"></center>
 
 ## 7.6.19 Styling the Dropdown
 
