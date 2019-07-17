@@ -1,3 +1,25 @@
+## 7.16.19 Styling the Dropdown IV: Label-less Icons
+
+After much difficulty, I've decided to forgo the label, and have the highlighter icon on its own, in the relevant color. I realized this possibility when playing around with different sizes, when the simplicity of the icon appealed to me. It also accords with what I've said before regarding Jon Udell's script to "tag" annotations with color. My project is moving away from using verbal cues / engaging in verbal reactions. So having the color itself be the interface makes sense, because the person engages directly with that color. 
+
+An issue here would be accessibility. Maybe I could somehow add a tag or something that makes the name of the color available when necessary. 
+
+But for now, it's time to move on to functionality. I'll come back to this after I solve that central problem. Here's the annotator-toolbar now:
+
+<center><image src="../images/dropdownlabelless.png" width="400"></center>
+
+
+## 7.13.19 Styling the Dropdown III
+Still obsessed with this issue about the icon color. Looking back at my CSS notes from the Frontend workshop I took last month, I may have some ideas. I should read up on: 
+- descendant selectors - can these be used to modify existing classes/elements?
+- mixins:
+	This is the mixin for icons:
+	element {
+	@include icons {
+	color: red; // Make any icon red.
+	}
+	}
+
 ## 7.11-12.19 Styling the Dropdown II
 
 Still working with the appearance of the dropdown. Was able to move its position (so it doesn't overlap with the adder), and to add highlight icons to each button. Took me a while to find the icon in the codebase, which uses icomoon. Turns out I just had to copy and paste the icon "class" in another part of the button element.
@@ -9,6 +31,10 @@ I finally ended up by using in inline css rule in the html to color the entire b
 Here's what the dropdown looks like now:
 
 <center><image src="../images/dropdownstyled.png" width="400"></center>
+
+In case I want to get back to this later, see the following: 
+- https://css-tricks.com/almanac/properties/f/fill/
+- https://frontstuff.io/multi-colored-svg-symbol-icons-with-css-variables 
 
 ## 7.6.19 Styling the Dropdown
 

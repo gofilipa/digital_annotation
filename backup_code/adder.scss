@@ -147,8 +147,10 @@ $adder-transition-duration: 80ms;
 // Links inside the dropdown, copypasted from .annotator-adder-actions__button
 .dropdown-content li {
   box-shadow: none;
+  font-size: 20px;
+  margin: 2px 0px;
   font-family: h;
-  font-size: 14px;
+  color: $gray-dark;
   background: $white;
   color: $gray-dark;
   display: flex;
@@ -170,11 +172,33 @@ $adder-transition-duration: 80ms;
 // trying to get the dropdown to show below the current menu... but not working. Adding position: relative or absolute just creates this whole box beneath. It expands the adder. 
 .dropdown:hover .dropdown-content {
   display: block;
-  margin-top: 35px;
+  margin-top: 38px;
 }
 
-.div {
+// these work by setting color to the li elements
+.h-icon-highlight .red {
+  color: red;
+}
+
+.h-icon-highlight .blue {
+  color: blue;
+}
+
+.h-icon-highlight .yellow {
+  color: rgb(247, 238, 55);
+}
+
+
+// does not work
+li .h-icon-highlight {
   @include icons {
-  color: red; // Make any icon red.
+  color: purple; // Make any icon purple....
+  }
+}
+
+// does not work
+.h-icon-highlight {
+  @include icons {
+  color: brown; // Make any icon brown ....
   }
 }
