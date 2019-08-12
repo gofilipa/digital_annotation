@@ -1,3 +1,64 @@
+## 8.12.19 Color Classes
+
+Am able to change highlight color by passing a CSS class from index.coffee, having configured the color in variables.scss and set it to the annotator-hl class in annotator.scss. But I cannot pass multiple classes in index.coffee (or guest.coffee?). 
+
+Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class. I've tried passing combinations "annotator-hl-", then "annotator-hl-red", which both worked. I could change colors this way, but I coudln't get multiple colors in there. Passing more than one class turned up a syntax error. Perhaps the key will be to configure all colors in the annotator.scss file. I should probably also read up on passing multiple css classes as javascript arguments. 
+
+## 8.11.19 highlightRange
+
+Now that I have a better sense of the code here, I can play around with highlightRange and passing arguments. 
+
+As Joe mentioned, this line of code is the exploit where I can pass a second parameter, a CSS class, which is configured as default "annotator-hl" in the index.coffee file, but not actually passed in guest.coffee. The default param takes us to **annotator.scss**, where it is described accordingly:
+
+		//HIGHLIGHTS///////////////////
+		.annotator-highlights-always-on {
+		.annotator-hl {
+			background-color: $highlight-color;
+			cursor: pointer;
+		}
+
+		.annotator-hl .annotator-hl {
+			background-color: $highlight-color-second;
+		}
+
+		.annotator-hl .annotator-hl .annotator-hl {
+			background-color: $highlight-color-third;
+		}
+		}
+
+		.annotator-hl.annotator-hl-focused {
+		background-color: $highlight-color-focus !important;
+
+		.annotator-hl {
+			background-color: transparent !important;
+		}
+		}
+
+Here, according to Joe, I could add more classes, one for each of the highlighter colors.  
+
+## 8.8.19 Understanding Guest.coffee
+
+This is a hell of a large file written in coffeescript, a streamlined dialectic of javascript that's easier to read and write. This is the file that Joe drew my attention to for the majority of our meeting. It configures all the commenting and highlighting, describing how these actions are carried out. 
+
+I spent some time trying to understand the file as a whole, but since it's so big, I had to break it up. After getting a general sense of the file, I then outlined the parts of the code relevant to highlighting (which Joe pointed out to me). I was able to get a better sense of how the highlighting is processed here, through specific functions and calls. Things really started to come together when I followed the code backward, starting from the end, and working my way up to the event handler in **adder.js**. 
+
+Main things to remember about **guest.coffee**: 
+
+The onHighlight option called in **addder.js** here initiates a call to createHighlight which passes "true" for highlight into a larger function called createAnnotation. It's in this function that highlightRange runs with potentially three arguments, which I can configure in **index.coffee**. Joe suggested that I pass a CSS class into this function as a third parameter, which specifies the color of the highlight. That's it!
+
+## 7.25.2019 Functionality Overview
+
+Now that I'm in a good place with cosmetics, I'm looking at functionality. According to my last conversation with Joe, there are three files that do the bulk of the highlighting. These are **adder.js**, **guest.coffeee**, and **index.coffee**. For the past couple of days I've been going through parts of these files to understand what they do as a whole. After that, I'm going to look at the relevant pieces of code (which Joe helpfully pointed out to me) where the highlighter is called and configured. First, though, an overview:
+
+**adder.js**:
+- This file carves a space for the adder toolbar to function on the webpage. It sets up basic functionality for clicking on the adder. In more technical terms, it creates a shadow DOM that controls the appearance of the adder, and an eventlistener for the highlight button. This call takes us to guest.coffee.
+
+**guest.coffeee**: 
+- This large file configures the commenting and highlighting actions that occur in the adder. It goes into complexity describing animation promises, anchors, metadata, visibility, deletion, etc, that go into retrieving and displaying annotations.
+
+**index.coffee**:
+- This short file describes some classes that have to do with the highlightRange. Joe said this will be where I pass my custom CSS class that includes color. 
+
 ## 7.16.19 Styling the Dropdown IV: Label-less Icons
 
 After much difficulty, I've decided to forgo the label, and have the highlighter icon on its own, in the relevant color. I realized this possibility when playing around with different sizes, when the simplicity of the icon appealed to me. It also accords with what I've said before regarding Jon Udell's script to "tag" annotations with color. My project is moving away from using verbal cues / engaging in verbal reactions. So having the color itself be the interface makes sense, because the person engages directly with that color. 
@@ -10,7 +71,7 @@ But for now, it's time to move on to functionality. I'll come back to this after
 
 
 ## 7.13.19 Styling the Dropdown III
-Still obsessed with this issue about the icon color. Looking back at my CSS notes from the Frontend workshop I took last month, I may have some ideas. I should read up on: 
+Moving on impossible. Still obsessed with this issue about the icon color. Looking back at my CSS notes from the Frontend workshop I took last month, I may have some ideas. I should read up on: 
 - descendant selectors - can these be used to modify existing classes/elements?
 - mixins:
 	This is the mixin for icons:
@@ -22,7 +83,7 @@ Still obsessed with this issue about the icon color. Looking back at my CSS note
 
 ## 7.11-12.19 Styling the Dropdown II
 
-Still working with the appearance of the dropdown. Was able to move its position (so it doesn't overlap with the adder), and to add highlight icons to each button. Took me a while to find the icon in the codebase, which uses icomoon. Turns out I just had to copy and paste the icon "class" in another part of the button element.
+Still working with the appearance of the dropdown. Was able to move its position (so it doesn't overlap at all with the adder), and to add highlight icons to each button. Took me a while to find the icon in the codebase, which uses icomoon. Turns out I just had to copy and paste the icon "class" in another part of the button element.
 
 The next step, coloring the icons, proved extremely time consuming. I wanted each icon to display the color indicated in the colors label. First, I spent a lot of time trying to find the source of the icon to change the color, ended up going on icomoon, from where I still couldn't figure out how to do it. I also tried a bunch of different css solutions, coloring the h-icon-highlight to red, for example. This worked, but it made all the icons red. There's no way for me to do this just to one icon. 
 
@@ -74,7 +135,7 @@ First, I came to Joe with the following files, where I had been spending most of
 
 Up to now, I've been messing with **adder.html**, **adder.scss**, and **variables.scss** in order to expand the adder toolbar for more buttons which indicate different colors that you can apply to highlight the selection. However, while I'm able to create more buttons on adder.html, just by copy/pasting the html code for the "highlight" button and styling them, *I've not been able to affect the selected text itself*---that is, the text on the page that I want to highlight---*beyond just changing the default highlight color*. In other words, I'm able to change the default highlight color to purple (or whatever color), but I cannot add more than one color, or more than one working highlighter button, because then the tool just breaks. I assume the issue is with the **adder.js** file, which I don't really understand.
 
-Joe's response to me was enlightenting, because it turns out that the bulk of adder is actually configured in a file called **guest.coffee**. Joe explained that it this file, which also uses code from **highlighter/dom-wrap-highlighter/index.coffee**. According to Joe, the code works in more or less the order below:
+Joe's response to me was enlightenting, because it turns out that the bulk of adder is actually configured in a file called **guest.coffee**. Joe explained that in this file also uses code from **highlighter/dom-wrap-highlighter/index.coffee**. According to Joe, the code works in more or less the order below:
 
 	adder.js:
 	176: handleCommand(event, options.onHighlight)
@@ -197,7 +258,7 @@ This is a small step, but it's a key one. Next I'm going to try to expand the ad
 
 ## 3.29.19 Layering Colors and Anchoring: NeMLA and Udell
 
-It's been a couple of weeks since I worked on this. Mostly because I've been busy preparing a conference paper on this project, which is still mostly theoretical at this point. I'm uploading [the full paper here](../papers/NeMLA_talk_March2019.pdf), but I thought I'd take some space below to summarize my key takeaway from the conference paper, which shows where my thinking is heading on this projects (my thoughts being far ahead of my practical accomplishments so far).
+It's been a couple of weeks since I worked on this. Mostly because I've been busy preparing a conference paper on this project, which is still mostly theoretical at this point. I'm uploading [the full paper here](../papers/NeMLA_talk_March2019.pdf), but I thought I'd take some space below to summarize my key takeaway from the conference paper, which shows where my thinking is heading on this project (my thoughts being far ahead of my practical accomplishments so far).
 
 > A way that I am interested in using color is by 
 > assigning different affects to specific colors, 
@@ -262,7 +323,7 @@ This idea is very interesting, but it isn't exactly what I want to do, which is 
 ## 3.15.19
 From the Lab
 
-Today I am tempted by a little bit of an ambitious goal. I'm would like to (hopefully) begin building the new component of the interface which will contain the option for multiple highlighters. This is really, the crux of my project. 
+Today I am tempted by a little bit of an ambitious goal. I'm would like to (hopefully) begin building the new component of the interface which will contain the option for multiple highlighters. This is the crux of my project. 
 
 How to proceed with achieving this goal? I doubt I can do it in one day. I ought to break it down into steps, according to Agile Methodology principles.
 
