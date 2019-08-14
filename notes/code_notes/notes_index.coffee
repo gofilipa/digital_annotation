@@ -7,7 +7,7 @@ $ = require('jquery')
 # cssClass - A CSS class to use for the highlight (default: 'annotator-hl')
 #
 # Returns an array of highlight Elements.
-exports.highlightRange = (normedRange, cssClass='annotator-hl') ->
+exports.highlightRange = (normedRange, cssClass='blue yellow') ->
   white = /^\s*$/
 
   # A custom element name is used here rather than `<span>` to reduce the
