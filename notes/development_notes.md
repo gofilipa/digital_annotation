@@ -1,14 +1,20 @@
-## 8.12.19 Color Classes
+## 8.14.19 Color Classes
 
-Am able to change highlight color by passing a CSS class from index.coffee, having configured the color in variables.scss and set it to the annotator-hl class in annotator.scss. But I cannot pass multiple classes in index.coffee (or guest.coffee?). 
+Am able to change highlight color by passing a CSS class into "highlightRange", in the file [index.coffee](../source_code/client_alias/src/annotator/highlighter/dom-wrap-highlighter/index.coffee), having configured the color in variables.scss and set it to the "annotator-hl" class in [annotator.scss](../source_code/client_alias/src/styles/annotator/annotator.scss). I can also pass custom classes (for example, "blue" instead of "annotator-hl") and multiple classes (eg, "blue" and "yellow") into highlightRange.  
 
-Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class. I've tried passing combinations "annotator-hl-", then "annotator-hl-red", which both worked. I could change colors this way, but I coudln't get multiple colors in there. Passing more than one class turned up a syntax error. Perhaps the key will be to configure all colors in the annotator.scss file. I should probably also read up on passing multiple css classes as javascript arguments. 
+However, I need to find a way to tie the color classes to the button (from the dropdown menu) that's being clicked. Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class, or whatever class I put in that slot. Custom classes work, allowing me to change colors, but I coudln't get multiple colors in there. 
+
+Perhaps the answer will be to configure all colors in the annotator.scss file, finding some way to choose one color over another, and then passing that color as the CSS class. Can I write a script for this? What would it look like and where would it go?
+
+Another route could be to look at the onHighlight option in guest.coffee. That event listener is tied to the adder button, which is now expanded to include the dropdown. Is there a way, somewhere down the line, that I could separate out or indicate the different buttons of the highlighter? Perhaps a thingy that loops through the buttons, finds the selected one, and then passes the associated class? 
+
+I should probably read up on passing multiple css classes into components, as well as some advanced CSS. 
 
 ## 8.11.19 highlightRange
 
 Now that I have a better sense of the code here, I can play around with highlightRange and passing arguments. 
 
-As Joe mentioned, this line of code is the exploit where I can pass a second parameter, a CSS class, which is configured as default "annotator-hl" in the index.coffee file, but not actually passed in guest.coffee. The default param takes us to **annotator.scss**, where it is described accordingly:
+As Joe mentioned, this line of code is the exploit where I can pass a second parameter, a CSS class, which is configured as default "annotator-hl" in the index.coffee file, but not actually passed in guest.coffee. The default param takes us to **annotator.scss**, which is a file that configures the sidebar that pops out whenever there's a highlight as well as the highlight itself. The relevant section of the code is the following:
 
 		//HIGHLIGHTS///////////////////
 		.annotator-highlights-always-on {
