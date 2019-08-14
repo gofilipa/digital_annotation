@@ -1,6 +1,6 @@
 ## 8.14.19 Color Classes
 
-Am able to change highlight color by passing a CSS class into "highlightRange", in the file [index.coffee](code_notes/index.coffee), having configured the color in variables.scss and set it to the "annotator-hl" class in [annotator.scss](../code_notes/annotator.scss). I can also pass custom classes (for example, "blue" instead of "annotator-hl") and multiple classes (eg, "blue" and "yellow") into highlightRange.  
+Am able to change highlight color by passing a CSS class into "highlightRange", in the file [index.coffee](code_notes/notes_index.coffee), having configured the color in variables.scss and set it to the "annotator-hl" class in [annotator.scss](../code_notes/notes_annotator.scss). I can also pass custom classes (for example, "blue" instead of "annotator-hl") and multiple classes (eg, "blue" and "yellow") into highlightRange.  
 
 However, I need to find a way to tie the color classes to the button (from the dropdown menu) that's being clicked. Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class, or whatever class I put in that slot. Custom classes work, allowing me to change colors, but I coudln't get multiple colors in there. 
 
