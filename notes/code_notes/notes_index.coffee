@@ -7,8 +7,33 @@ $ = require('jquery')
 # cssClass - A CSS class to use for the highlight (default: 'annotator-hl')
 #
 # Returns an array of highlight Elements.
-exports.highlightRange = (normedRange, cssClass='blue yellow') ->
+exports.highlightRange = (normedRange, cssClass='yellow') ->
   white = /^\s*$/
+
+  # Trying to select the class for button and connect
+  # it to the class for highlight.... doesnt work
+  #
+  # With color classes:
+  #
+  # if $(elem.parents('.red')) is true
+  #   cssClass = 'red'
+  # else if $(element.parents()) is '.blue'
+  #   cssClass = 'blue'
+  # else if $(element.parents()) is '.yellow'
+  #   cssClass = 'yellow'
+  # else 
+	# 	cssClass = 'yellow'
+
+  # With IDs: (also doesn't work)
+  #
+  # if $('#red') 
+  #   cssClass = 'red'
+  # else if $(element.parents()) is '.blue'
+  #   cssClass = 'blue'
+  # else if $(element.parents()) is '.yellow'
+  #   cssClass = 'yellow'
+  # else 
+	# 	cssClass = 'yellow'
 
   # A custom element name is used here rather than `<span>` to reduce the
   # likelihood of highlights being hidden by page styling.

@@ -1,14 +1,59 @@
+## 8.15.19 JQuery Traversals
+
+I'm playing around with JQuery as a solution for grabbing the highlight value from the button. Today i looked at the [.parent()](https://api.jquery.com/parent/) method to connect the cssClass of the highlight with the event handler. I'm trying some possibilities, using [this post](https://stackoverflow.com/questions/17084839/check-if-any-ancestor-has-a-class-using-jquery) from Stack Overflow as a guide.
+
+	exports.highlightRange = (normedRange, cssClass) ->
+		white = /^\s*$/
+		
+		# if $(element.parents()) is '.red'  
+		#   cssClass = 'red'
+		# else if $element.parents()) is '.blue'
+		#   cssClass = 'blue'
+		# else if $(element.parents()) is '.yellow'
+		#   cssClass = 'yellow'
+		# else 
+		# 	cssClass = 'yellow'
+
+		hl = $("<hypothesis-highlight class='#{cssClass}'></hypothesis-highlight>")
+
+		nodes = $(normedRange.textNodes()).filter((i) -> not white.test @nodeValue)
+
+		return nodes.wrap(hl).parent().toArray()
+
+Unfortunately, the above does not work. It keeps breaking the tool. 
+
+Should I go back to the onHighlight option from the event handler in [adder.js](./code_notes/notes_adder.js) & [guest.coffee](./code_notes/notes_guest.coffee)? Or should I keep researching JQuery traversals (closest() and find() being other options) and going through trial and error?
+
 ## 8.14.19 Color Classes
 
 Am able to change highlight color by passing a CSS class into "highlightRange", in the file [index.coffee](code_notes/notes_index.coffee), having configured the color in variables.scss and set it to the "annotator-hl" class in [annotator.scss](../code_notes/notes_annotator.scss). I can also pass custom classes (for example, "blue" instead of "annotator-hl") and multiple classes (eg, "blue" and "yellow") into highlightRange.  
 
-However, I need to find a way to tie the color classes to the button (from the dropdown menu) that's being clicked. Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class, or whatever class I put in that slot. Custom classes work, allowing me to change colors, but I coudln't get multiple colors in there. 
+However, I need to find a way to tie the color classes to the button (from the dropdown menu) that's being clicked. Basically, I need to pass a specific color class into index.coffee, where it now only has the general annotator-hl class, or whatever class I put in that slot. 
 
-Perhaps the answer will be to configure all colors in the annotator.scss file, finding some way to choose one color over another, and then passing that color as the CSS class. Can I write a script for this? What would it look like and where would it go?
+One option might be to write a script that selects the correct class and passes it to highlightRange. I found a script from annotator.js's [highlight module](https://github.com/openannotation/annotator/blob/master/src/ui/highlighter.js) which could be adopted to my purposes. Instead of passing the default "annotator-hl" class, I would pass the relevant color. It would look something like this:
 
-Another route could be to look at the onHighlight option in guest.coffee. That event listener is tied to the adder button, which is now expanded to include the dropdown. Is there a way, somewhere down the line, that I could separate out or indicate the different buttons of the highlighter? Perhaps a thingy that loops through the buttons, finds the selected one, and then passes the associated class? 
+	function highlightRange(normedRange, cssClass) {
+		if (typeof cssClass === 'red') {
+			cssClass = 'red';
+		} else if (typeof cssClass === 'blue') {
+			cssClass = 'blue';
+		} else (typeof cssClass === 'yellow') {
+			cssClass = 'yellow';
+		}
+		
+	# the rest of the script is copy/pasted from the hypothes.is highlighter module
 
-I should probably read up on passing multiple css classes into components, as well as some advanced CSS. 
+		hl = $("<hypothesis-highlight class='#{cssClass}'></hypothesis-highlight>")
+
+  		nodes = $(normedRange.textNodes()).filter((i) -> not white.test @nodeValue)
+
+  	return nodes.wrap(hl).parent().toArray()
+	}
+
+
+The remaining issue is how I might indicate the different buttons of the highlighter in the script. I need to find some way of connecting this code to the button on the adder.html file. 
+
+I should probably read up on passing multiple css classes into JS components, as well as some advanced CSS. 
 
 ## 8.11.19 highlightRange
 
@@ -40,7 +85,7 @@ As Joe mentioned, this line of code is the exploit where I can pass a second par
 		}
 		}
 
-Here, according to Joe, I could add more classes, one for each of the highlighter colors.  
+Here, I could add more classes, one for each of the highlighter colors.  
 
 ## 8.8.19 Understanding Guest.coffee
 
@@ -67,7 +112,7 @@ Now that I'm in a good place with cosmetics, I'm looking at functionality. Accor
 
 ## 7.16.19 Styling the Dropdown IV: Label-less Icons
 
-After much difficulty, I've decided to forgo the label, and have the highlighter icon on its own, in the relevant color. I realized this possibility when playing around with different sizes, when the simplicity of the icon appealed to me. It also accords with what I've said before regarding Jon Udell's script to "tag" annotations with color. My project is moving away from using verbal cues / engaging in verbal reactions. So having the color itself be the interface makes sense, because the person engages directly with that color. 
+After much difficulty, I've decided to forgo the label, and have the highlighter icon on its own, in the relevant color. I realized this possibility when playing around with different sizes, when the simplicity of the icon appealed to me. It also accords with what I've said before regarding Jon Udell's script to "tag" annotations with color. My project is moving away from using verbal cues / engaging in verbal reactions. So having the color itself be the selection on the interface makes sense, because the person engages directly with that color. 
 
 An issue here would be accessibility. Maybe I could somehow add a tag or something that makes the name of the color available when necessary. 
 
@@ -77,7 +122,7 @@ But for now, it's time to move on to functionality. I'll come back to this after
 
 
 ## 7.13.19 Styling the Dropdown III
-Moving on impossible. Still obsessed with this issue about the icon color. Looking back at my CSS notes from the Frontend workshop I took last month, I may have some ideas. I should read up on: 
+Moving on impossible. I'm still obsessed with this issue about the icon color. Looking back at my CSS notes from the Frontend workshop I took last month, I may have some ideas. I should read up on: 
 - descendant selectors - can these be used to modify existing classes/elements?
 - mixins:
 	This is the mixin for icons:
