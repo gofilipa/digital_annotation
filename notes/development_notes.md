@@ -7,7 +7,7 @@ I'm playing around with JQuery as a solution for grabbing the highlight value fr
 		
 		# if $(element.parents()) is '.red'  
 		#   cssClass = 'red'
-		# else if $element.parents()) is '.blue'
+		# else if $(element.parents()) is '.blue'
 		#   cssClass = 'blue'
 		# else if $(element.parents()) is '.yellow'
 		#   cssClass = 'yellow'
@@ -20,11 +20,11 @@ I'm playing around with JQuery as a solution for grabbing the highlight value fr
 
 		return nodes.wrap(hl).parent().toArray()
 
-Unfortunately, the above does not work. It keeps breaking the tool. 
+Unfortunately, the above does not work. It keeps breaking the tool. I also tried passing ids, which you can see in [index.coffee](code_notes/notes_index.coffee).
 
 Should I go back to the onHighlight option from the event handler in [adder.js](./code_notes/notes_adder.js) & [guest.coffee](./code_notes/notes_guest.coffee)? Or should I keep researching JQuery traversals (closest() and find() being other options) and going through trial and error?
 
-## 8.14.19 Color Classes
+## 8.14.19 Passing Colors to highlightRange
 
 Am able to change highlight color by passing a CSS class into "highlightRange", in the file [index.coffee](code_notes/notes_index.coffee), having configured the color in variables.scss and set it to the "annotator-hl" class in [annotator.scss](../code_notes/notes_annotator.scss). I can also pass custom classes (for example, "blue" instead of "annotator-hl") and multiple classes (eg, "blue" and "yellow") into highlightRange.  
 
@@ -55,34 +55,17 @@ The remaining issue is how I might indicate the different buttons of the highlig
 
 I should probably read up on passing multiple css classes into JS components, as well as some advanced CSS. 
 
-## 8.11.19 highlightRange
+## 8.11.19 Adding Color Classes
 
 Now that I have a better sense of the code here, I can play around with highlightRange and passing arguments. 
 
-As Joe mentioned, this line of code is the exploit where I can pass a second parameter, a CSS class, which is configured as default "annotator-hl" in the index.coffee file, but not actually passed in guest.coffee. The default param takes us to **annotator.scss**, which is a file that configures the sidebar that pops out whenever there's a highlight as well as the highlight itself. The relevant section of the code is the following:
+As Joe mentioned, I could pass a CSS class, which is now passed as default "annotator-hl" in the index.coffee file, to guest.coffee. The default param takes us to **annotator.scss**, which is a file that configures the sidebar that pops out whenever there's a highlight as well as the highlight itself. The relevant section of the code is the following:
 
 		//HIGHLIGHTS///////////////////
 		.annotator-highlights-always-on {
 		.annotator-hl {
 			background-color: $highlight-color;
 			cursor: pointer;
-		}
-
-		.annotator-hl .annotator-hl {
-			background-color: $highlight-color-second;
-		}
-
-		.annotator-hl .annotator-hl .annotator-hl {
-			background-color: $highlight-color-third;
-		}
-		}
-
-		.annotator-hl.annotator-hl-focused {
-		background-color: $highlight-color-focus !important;
-
-		.annotator-hl {
-			background-color: transparent !important;
-		}
 		}
 
 Here, I could add more classes, one for each of the highlighter colors.  
