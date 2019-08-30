@@ -1,3 +1,69 @@
+## 8.30.19 it works!
+
+<image src="../images/getting_started.png" width="400">
+
+Last week, I had a meeting with Joe and we were able to iron out the remaining issue of calling the highlight value from the button to configure the highlight color. Basically, we passed the highlight data through guest.coffee into the highlighter module, in index.coffee, where we wrote a script in that selects the correct color (designated in CSS) to wrap the highlights. After this, I was able to use the tool to highlight in multiple colors---red, blue and yellow!
+
+To go into more detail: first, we ...
+
+Added (event) as parameter to pass the event info to createHighlight: 
+
+		# takes event as param
+		onHighlight: (event) -> 
+			self.setVisibleHighlights(true)
+			# also passes event to createHighlight
+        	self.createHighlight(event)
+        	document.getSelection().removeAllRanges()
+
+Added (event) again to pass the event info to createHighlight. This passes "true" for highlight as well as event. 
+
+		# takes event as param
+		createHighlight: (event) ->
+			# adds param of clickEvent:event to createAnnotation
+			return this.createAnnotation({$highlight: true, clickEvent: event})
+
+Then, createAnnotation runs a bunch of stuff about anchors, leads to this anchor variable which makes a call to highlight: 
+
+		anchor = locate(target).then(highlight)
+
+This call the highlight object, to which we added the annotation event info once more.
+
+		# adds annotation.clickEvent as param to highlightRange
+		highlights = highlighter.highlightRange(normedRange, annotation.clickEvent)
+
+This function takes us to the highlighter module, index.coffee. Here, we added a script that configures the appropriate color depending on which button was clicked.
+
+	exports.highlightRange = (normedRange, event, cssClass='annotator-hl') ->
+  		white = /^\s*$/
+	
+		# checks in the console to see the event info 
+		console.log("annotation.event: ", event)
+
+		# creates a variable for colorClasses that grabs the first class listed
+		colorClasses = event.path[0].classList # @TODO check that path exists inside event
+
+		# else if statement that matches button class to highlight class
+		if colorClasses.contains('yellow')
+			hlColor = 'annotator-hl--yellow'
+		else if colorClasses.contains('red')
+			hlColor = 'annotator-hl--red'
+		else if colorClasses.contains('blue')
+			hlColor = 'annotator-hl--blue'
+		else
+			hlColor = ''
+
+
+		# hl component with additional class, hlColor 
+  		hl = $("<hypothesis-highlight class='#{cssClass} #{hlColor}'></hypothesis-highlight>")
+
+And that's it! Here's what the final product looks like.... 
+
+<image src="../images/proof.png" width="400">
+
+The most important thing that I learned in this meeting with Joe is how the javascript stores all of this data that I had no idea about---including the highlight data. The relevant piece of data for me was the "path" array, which stored all the Document Object Model objects as an array. I only had to acces the first (or [0]) value, in order to get the correct color. This is because the highlight dropdown selection was the most specific object in the DOM.
+
+<image src="../images/path.png" width="400">
+
 ## 8.15.19 JQuery Traversals
 
 I'm playing around with JQuery as a solution for grabbing the highlight value from the button. Today i looked at the [.parent()](https://api.jquery.com/parent/) method to connect the cssClass of the highlight with the event handler. I'm trying some possibilities, using [this post](https://stackoverflow.com/questions/17084839/check-if-any-ancestor-has-a-class-using-jquery) from Stack Overflow as a guide.
