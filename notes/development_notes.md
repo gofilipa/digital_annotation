@@ -62,7 +62,7 @@ And that's it! Here's what the final product looks like....
 
 The most important thing that I learned in this meeting with Joe is how the javascript stores all of this data that I had no idea about---including the highlight data. The relevant piece of data for me was the "path" array, which stored all the Document Object Model objects as an array. I only had to acces the first (or [0]) value, in order to get the correct color. This is because the highlight dropdown selection was the most specific object in the DOM.
 
-<image src="../images/path.png" width="400">
+<image src="../images/path.png" width="500">
 
 ## 8.15.19 JQuery Traversals
 

@@ -1,0 +1,230 @@
+* Outline
+/The idea is that I bastardize my previous paper, interweave my dev notes as a narrative, make some proposals for using color, and
+culminate in a conclusion about next steps./
+
+** Problem 
+/Expand active reading to include affect---instinctual and emotional
+reactions to reading./
+
+This project explores digital annotation as a way to make solitary
+reading practices more embodied and engaging. I intend to modify an
+existing annotation tool to use in my English 220: Introduction to
+Writing about Literature course at Hunter College. As an instructor
+for this course, I learned the difficulty of teaching active reading
+skills in the classroom. By “active reading”, I mean strategies that
+allow one to not only understand the ideas in a text, but to engage
+critically with them. Often, active reading denotes a variety of
+actions, such as highlighting, underlining, and writing in the margin,
+to emphasize moments of interest that require close attention. These
+strategies assist the reader to identify and focus on concrete
+elements of the text and guide her in constructing a critical
+response. However, as any English instructor of lower-level
+undergraduate classes knows, these strategies do not come naturally to
+most readers, and they have to be cultivated through repeated modeling
+and practice in the classroom.  Instructors must make visible the
+attention to language—specific sentences, phrases and words—required
+in close reading, and demonstrate how to analyze language in depth,
+particularly the elaboration of meaning or significance. From my
+experience, I’ve found that using a digital annotation tool in the
+classroom is immensely helpful for modeling “active reading”
+strategies for students and following their progress as they complete
+the reading. By annotating passages as a class, I can guide them
+toward making incisive and thoughtful responses; and by having them
+annotate the text as homework, I am able to see what my students are
+thinking about, how they incorporated their knowledge of figurative
+language that we learned in class, and how they work towards making
+critical arguments about their reading.
+
+While this tool has been immensely helpful for teaching close and
+critical attention to language, I recently find myself more interested
+in accessing and harnessing other kinds of responses to reading. For
+this project, I will explore how this sense of “active reading” can be
+expanded to include affect in order to engage nonverbal and embodied
+responses to text. As Sharona Levy points out, it is very difficult to
+understand how students process a text: “there is no mechanism to open
+their heads and see which neurons are firing while they are reading”
+(5).  Traditional annotation only engages critical activity in its
+textual, verbalized form. Therefore, I propose to apply digital
+annotation toward engaging nonverbal reactions to reading. While the
+current tool allows me to make visible the role of analysis and
+interpretation, and to follow my students’ progress in learning close
+reading, it doesn’t address the emotional and instinctual reactions
+that often occur in reading. An additional feature, specifically, the
+option for color-coding the annotations, would allow students to
+confront their more immediate responses, feelings, and gut reactions
+during the reading process. By customizing the color of their
+highlights, students may begin to understand how their feelings can be
+part of a larger, more formalized analytical process. With more
+options, students can identify moments of interest, confusion, or
+other affects as moments that deserve further scrutiny. Additionally,
+they can also use colors as flexible categories that indicate
+different areas of understanding---such as figuration, themes, or
+syntax. In this way, the tool will not only engage affect and bodily
+reactions, but also allow for organizing and categorizing different
+types of annotations.
+
+*** What is Hypothesis?
+
+Hypothes.is is an open source annotation tool that operates as a
+browser extension, which means that it can be activated and used on
+any page that appears on a web browser. To use Hypothes.is, the user
+must first create an account on the Hypothes.is homepage. Then, they
+have to download a browser extension and activate it. After activating
+the browser extension and logging into the account, they are able to
+make annotations. To make an annotation, users highlight the desired
+text and type their comment in a simple text box that appears. After
+saving their comment, the original text is highlighted, and all users
+may view the annotation on a collapsible sidebar. By selecting the
+“reply” button, users then can respond to the comment, which will
+appear below the previous annotation on the sidebar. My proposal would
+modify the appearance of the highligther by offering options for
+highlighter colors. Rather than just have yellow, users can choose
+among a variety of colors to highlight the text. As an open-source
+project, with extensive documentation and a supportive developer
+community, Hypothes.is, will be the base for developing my
+customizations.
+
+** Guiding Questions
+/The tension between the “provocative” and the “prescriptive”./
+
+In developing the tool, I wonder how annotation might expand or reduce
+the quality of the student’s engagement with the text. Here, I’m
+concerned in the tension between what I call the
+“provocative”---opening up the text to new insights---and the
+“prescriptive”---limiting a student’s interaction with the text to a
+predetermined set of choices or options for responding. In exploring
+this tension, I have three main questions: First, how do annotation
+tools support a prescriptive approach to teaching close reading: how
+do they create a standardized method or process in responding to
+texts? Second, more specifically, do certain features, such as colors,
+categories, or tags, for example, actually limit the kinds of
+responses they could have without these prompts? Do these options
+actually create a confining structure? And finally, from the opposite
+perspective, how can giving students more nonverbal options in an
+annotation tool provoke them toward more spontaneous insights?
+
+
+/First, existing tools & prescriptive approach to teaching close reading, Quantify everything movement, tracking students./ 
+
+This color-coding feature aims to resist the pervasive and insidious
+nature of many “edtech” tools and platforms, especially those that
+quantify or “measure” student learning. The effects of edtech range
+from exploitative to harmful, as Audrey Watters explains in her
+extensive investigations on dangers of collecting information on
+students, which not only makes them vulnerable to those who would
+profit from them economically, but also reduces them data points and
+labels, such as “cheat” or “at risk”. In “ Ed-Tech and Trump ”,
+Watters explains that the desire to track and collect student data is
+closely associated with the desire to harm certain demographics, as
+was the case with the first computational census that began in Nazi
+Germany.  More recently, in a talk at the Graduate Center, Watters
+discusses how certain edtech tools that track student
+performance---and purport to create “personalized” learning
+experiences---actually work to standardize and automate
+education. Keeping these conversations in mind, I’m interested in
+creating a tool that resists this trend of quantification. Therefore,
+by experimenting with nonverbal, embodied reactions to reading, I hope
+to achieve two things: first, as stated above, I hope to examine the
+role of affect in critical thinking, and second, I hope to explore how
+“tracking” can serve ends that are not exploitative, but provocative
+and empowering. Through this tool, I will experiment with active
+reading and assessment that engages moments of emotional struggle and
+insight, rather than measurable “learning outcomes”.
+
+/Second, how features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio./
+
+/Third, how nonverbal options are provocative, spontaneity, insights? Neuroscience and nonverbal options./
+
+
+** Prescriptive Approaches: Standardization, Enabling/Disabling Constraints
+/How do traditional annotation tools and practices support a
+prescriptive approach to teaching close reading: how do they create a
+standardized method or process in responding to texts? Audrey Watters,
+Amelia Abreau: tracking students, quantifying affect./ /Do certain
+features, such as colors, categories, or tags, for example, actually
+limit the kinds of responses students might have without these
+prompts? In other words, do these options actually create a structure
+that confines student thinking? Usages of Ponder, Lacuna, Annotation
+Studio./
+
+** Cyborgs, Neuroscience, and Nonverbal Options
+
+/- N. Katherine Hayles: marking embodied/affective knowledge vs discursive/ 
+
+I am influenced by the work of N. Katherine Hayles, John Bean, and
+Amelia Abeau. These theorists’ work, which range across the subjects
+of cybernetics, college composition, and theories of the quantified
+self, situates my thinking on the role of affect in technology and in
+writing. Hayles, in How We Became Posthuman has been a continued
+influence in how I think through human interaction with machines,
+particularly on the tension between embodied and disembodied
+knowledge. Hayles’ book examines the question, “How we became
+posthuman” by examining “how information lost it’s body” (2). By this
+phrase, Hayles means the idea, descendant from eighteenth century
+liberal humanism, that knowledge and feelings can exist independently
+of the body. She examines philosophical trends that prioritize
+rationality in the human, and extend into conceptions of the
+posthuman, which imagines the body as a prosthesis of the mind. In
+thinking about Hayles’ work, I’m specifically interested in how
+annotation engages with reading as an embodied practice that engages
+with extra-textual meaning . In other words, how can annotation
+connect more directly to knowledge as feeling and affect, rather than
+knowledge as information that exists purely in a textual form?
+
+John Bean’s work also influences how I approach affect as part of an
+analytical process.  Bean’s book, Engaging Ideas , explores how
+college composition and rhetoric instructors can use writing as a
+method to teach critical thinking skills in the classroom. Bean argues
+that the act of writing is implicitly analytical and evaluative,
+rather than communicative. He suggests instructors organize their
+lessons around “problems”, specifically, “beautiful problems… [which]
+create natural critical learning environments” (3). He explains that
+good writing assignments provoke a kind of productive discomfort, and
+that academic writing ought to capitalize on this “intellectual and
+often emotional struggle” (23). According to Bean, this struggle
+emerges with the awareness that a problem exists, which students must
+attempt to resolve. I’m interested in exploring how “beautiful
+problems” create moments of insight and spontaneous response.
+Throughout his work, I’m most influenced by power that “wonder”,
+“discomfort” and “struggle” have in stimulating thinking. But unlike
+Bean, I dwell on the power of these affects prior to their
+verbalization in traditional composition practices.
+
+/Cognitive neuroscience approaches; Embodied vs Embrained: Antonio Damasio on feeling from the body to the mind, Stanislas Dahaene on reading in the brain./
+
+
+** Color Theory toward a Queer Theory
+/Prescribed or spontaneous?/ /Plutchik’s wheel of emotions, Trans colors/ 
+
+/What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/
+
+** Resources
+- [[https://github.com/gofilipa/digital_annotation/blob/master/proposal_summary.md][Proposal Summary]]
+- [[https://github.com/hypothesis/frontend-toolkit/blob/master/docs/css-style-guide.md][CSS Guide]]
+- [[https://github.com/hypothesis/product-backlog/issues/198][Multiple Color issue on github]]
+- [[https://www.w3.org/TR/annotation-model/][W3C Annotation Standards]]
+
+*** Meeting notes: 
+
+Michael:
+
+Make my commit the best argument I can for why DH is an artist space.
+- Scholarship as code
+- Question: Currently we use different saturation values for our
+  highlight color when selections overlap each other. How will we
+  approach the overlapping of either completely different highlight
+  colors? Is there a theory of color blending? (DWHALEY)
+
+Writing the paper
+- Think about where I can publish it. Hybrid pedagogy?
+- Find a way to bring in my development notes as a narrative of my
+  work.
+- Think about how the story ends: accepted or rejected? Using it in a
+class? Scholarship as code? Accepted or rejected? What is the promise
+of queer DH?
+
+Color
+- My values / saturations are off.
+- Read up on Color Theory. What are some color meanings?
+- What are the right colors? What do they mean?
+- Imagine what colors I would use to annotate a Woolf text

@@ -10,11 +10,17 @@
 **Erikson, Mark. ["React-Redux Links"](https://github.com/markerikson/react-redux-links). *Github*.** 
 - Curated tutorial and resource links collected on React, Redux, ES6, and more.
 
+**Ghezala, Amir. ["Understanding the React build workflow and the folder structure"](https://dev.to/amirmoh10/understanding-the-react-build-workflow-and-the-folder-structure-3hlc). *DEV* June 1, 2019.**
+- Intro to how React folder system works, going into detail on package.json, src, node-modules, index.html, 
+
 **Greif, Sacha. ["A Study Plan to Cure Javascript Fatigue"](https://medium.freecodecamp.org/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1). *Medium*. October 31, 20016.**
 - A clear plan for getting up and running with Javascript, using the React framework. 
 
 **Jang, Peter. ["Modern Javascript Explained for Dinosaurs"](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70?source=linkShare-3707b10e3a30-1555718050&_branch_match_id=564540305931760406). *Medium*. October 18, 2017.**
 - High level overview of Javascript tool development. Explains the evolution of Javascript tools and what problems they are meant to solve. Goes from js files to modules to package managers to bundlers to task runners. Very clear and useful.
+
+**Kemple, Kurtis ["A JavaScript Project Structure I Can Finally Live With"](https://labs.mlssoccer.com/a-javascript-project-structure-i-can-finally-live-with-52b778041b72). *Medium* Sept 22, 2016**
+- Overview of basic directory architecture for Javascript projects. 
 
 **Pop, Florin. ["How to Create a Buttons UI Kit"](https://medium.freecodecamp.org/how-to-create-a-buttons-ui-kit-fdd354ee0815). *Medium*. April 19, 2019.**
 - Challenge and sample code for creating new buttons in Javascript. Describes different button states and HTML vs CSS.
