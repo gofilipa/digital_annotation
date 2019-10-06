@@ -84,7 +84,7 @@ project, with extensive documentation and a supportive developer
 community, Hypothes.is, will be the base for developing my
 customizations.
 
-** Guiding Questions
+** Guiding Tension
 /The tension between the “provocative” and the “prescriptive”./
 
 In developing the tool, I wonder how annotation might expand or reduce
@@ -103,8 +103,9 @@ actually create a confining structure? And finally, from the opposite
 perspective, how can giving students more nonverbal options in an
 annotation tool provoke them toward more spontaneous insights?
 
+** Prescriptive approaches and Standardization
 
-/First, existing tools & prescriptive approach to teaching close reading, Quantify everything movement, tracking students./ 
+/Existing tools & prescriptive approach to teaching close reading, Quantify everything movement, tracking students./ 
 
 This color-coding feature aims to resist the pervasive and insidious
 nature of many “edtech” tools and platforms, especially those that
@@ -131,23 +132,127 @@ and empowering. Through this tool, I will experiment with active
 reading and assessment that engages moments of emotional struggle and
 insight, rather than measurable “learning outcomes”.
 
-/Second, how features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio./
+/How features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio./
 
-/Third, how nonverbal options are provocative, spontaneity, insights? Neuroscience and nonverbal options./
+The project most relevant to my proposal is a tool called “Ponder”,
+created by a private tech company, Parlor Labs, Inc.  Like
+Hypothes.is, Ponder is a browser add-on tool that can be activated on
+any webpage. The company describes it as a “micro-response tool”, that
+purports to “give teachers a view into the ‘invisible’ process of
+learning through higher-order critical thinking” (“About”). The tool
+shares a basic functionality with Hypothes.is, which is highlighting
+text and responding through a written annotation. But has some
+additional features, including options for different “reactions”,
+called “sentiment tags”, and options for choosing from a list of
+“themes”, compiled and customized by the teacher. The “sentiment tags”
+are particularly interesting, because they allow students to
+categorize and color-code their responses according to
+“clarification”, “analysis” or “emotion”. Unfortunately, the project
+is proprietary, and charges a fee for its full usage. Carl Byth
+explains that goal of this “microresponse” strategy is to condense
+student responses into a simple expression that others can most easily
+engage with. These “sentiment tags” facilitate reading as a social
+experience:
 
+> To encourage students to “read each other,” Ponder limits responses
+> to short phrases called sentiments that fall into three categories:
+> comments about text comprehension (e.g., “I don’t get this”),
+> critiques of the text (e.g., “This smells like hyperbole”), and
+> emotional responses to the text (e.g., “Tsk, I disapprove.”) Blyth 209
 
-** Prescriptive Approaches: Standardization, Enabling/Disabling Constraints
-/How do traditional annotation tools and practices support a
-prescriptive approach to teaching close reading: how do they create a
-standardized method or process in responding to texts? Audrey Watters,
-Amelia Abreau: tracking students, quantifying affect./ /Do certain
-features, such as colors, categories, or tags, for example, actually
-limit the kinds of responses students might have without these
-prompts? In other words, do these options actually create a structure
-that confines student thinking? Usages of Ponder, Lacuna, Annotation
-Studio./
+Here, the pithy annotations allow interpretations to be shared and
+recognized among readers. A comparison could be made between these
+“microresponses” and emoticons or emojis, which are a more exaggerated
+way of condensing feeling into a expression that’s easily shared
+across social media. Despite the obvious social benefits of this tool,
+this prefabrication of responses seems constraining. By forcing the
+reader to choose between “clarification”, “analysis” or “emotion”, is
+the tool determining what kind of reaction someone might have? Or do
+these three tagging option (the cognitive, analytic, or emotional)
+function as an “enabling constraint”, that is, as a productive
+scaffolding that guides students toward thinking more deeply about
+their reading?  Keeping these questions in mind, I now turn to another
+tool that functions similarly to Ponder.
 
-** Cyborgs, Neuroscience, and Nonverbal Options
+This other example of digital annotation comes from a project called
+“Lacuna Stories”, developed by the Poetic Media Lab at Stanford, where
+it is incorporated as a Learning Management System. One major
+difference between Lacuna Stories and tools like Ponder or
+Hypothesi.is is that Lacuna Stories is its own platform for social
+reading and writing. As such, it is used by schools like Stanford as a
+central organizing space for a course, like Blackboard or Canvas, and
+provides a reading and writing interface for engaging with course
+materials. Despite this difference, the annotation component here
+functions similarly to Ponder: the reader highlights a section of the
+text, and has the option of making a comment. Then, the reader is
+prompted by options for different types of responses. [ SLIDE ] Like
+Ponder, there are categories for responding, which are also
+color-coded: here, the categories are “Comment”, “Question”,
+“Analyze”, “Connect”.
+
+According to Stanford instructors Amir Eshel and Brian Johnsrud, one
+of the tool’s main benefits is how it visualizes the student’s
+solitary responses to reading in a way that enhances classroom
+conversations about the text. It allows the instructors to create a
+“dialogic space” within the classroom that explores and expands upon
+student annotations. However, while this approach emphasizes students’
+reactions to reading, it also runs the risk of prescribing or
+establishing certain textual interpretations over others. The
+instructors admit that Lacuna creates a trade-off between what they
+call “guidance and discovery”, that is, “a tension that must be
+negotiated between the desire to allow students the space for
+intellectual discovery and the desire to guide their learning along a
+pre-specified path” (“Making Reading Visible”). This tension emerges
+when the act of annotating primes students toward more fixed
+interpretations of the text before they even enter into the classroom.
+
+The effect of this priming is enhanced when we consider another aspect
+of the tool, which tracks and visualizes student annotations across
+the platform. For, unlike Ponder and Hypothes.is, Lacuna Stories
+contains an “Annotation Dashboard,” only visible to instructors, for
+them to follow their students’ progress as they make annotations. As
+the instructors at Stanford point out, “annotations... serve as an
+accountability mechanism for completing assigned reading in a timely
+fashion, because instructors will see students’ activity on the text
+and students will know that instructors can see this activity.” On
+this “Annotations Dashboard”, student data such as the number and
+length of annotation is quantified and visualized in a series of
+graphs and charts. [ SLIDE ] Here is an example of what the dashboard
+looks like. In the panel, “Filter by Time”, instructors can view the
+raw number of annotations made on any given day of the course, getting
+a sense of daily participation. In “Annotation Details”, a series of
+pie charts indicate the relative amount of annotations by category,
+the length for each annotation, and the ratio of shared to
+private. Here, in particular, I wonder at the purpose of tracking the
+length of each annotation, and how such metrics might prioritize the
+quantity of writing as an assessment criterion. Finally, the “Network”
+section connects students to the texts they have annotated, where the
+links between them are weighted according to the amount of annotations
+each student made on each text. By directly visualizing quantitative
+(rather than qualitative) information about student annotations, the
+Annotation Dashboard potentially engages in the reductive effects of
+certain edtech tools that Audrey Watters warns about.
+
+Interestingly, however, there is a way that the tool uses quantified
+data in order to harness aspects of reading that cannot be
+quantified. The visualization of heavily annotated areas of text (in
+the “Network” panel) allows the instructors to identify moments of
+intellectual disagreement between annotations, and turn them back into
+sites of affect. The instructors explain that, “By using Lacuna as a
+window into students’ reading, [we] were able to pinpoint the exact
+places in the text that generated the most frustration, confusion, or
+disagreement [among] students” (“Making Reading Visible”). Here, the
+threaded annotations, where students engage in debate and conversation
+about the text, serve as an indicator of tension, what I’ll call
+productive affects , in their reading. Instructors can then turn the
+class’s attention to exploring more fully these moments of
+tension. The emphasis here on frustration and confusion enacts
+something analogous to John Bean’s strategy of posing “beautiful
+problems” to guide class writing and discussion.
+
+** Nonverbal Options, Enabling Constraints?
+
+/How nonverbal options are provocative, spontaneity, insights? Neuroscience and nonverbal options./
 
 /- N. Katherine Hayles: marking embodied/affective knowledge vs discursive/ 
 
@@ -192,17 +297,196 @@ verbalization in traditional composition practices.
 
 /Cognitive neuroscience approaches; Embodied vs Embrained: Antonio Damasio on feeling from the body to the mind, Stanislas Dahaene on reading in the brain./
 
+** What I Did
+
+Cosmetics:
+
+**adder.html** This is the short html file for the buttons, both the
+"Annotate" and "Highlight" button that pop up together once you make a
+text selection. I was able to make more buttons (which didn't actually
+work when pressed) on the toolbar by duplicating the html within the
+file.
+
+**adder.scss** This is the styling for the adder, including labels,
+colors, animations. I was able to change the color/appearance of the
+adder buttons by messing around here, calling new colors from the
+variables file.
+
+**variables.scss** This defines all the colors to be used in the
+UI. Starting at line 124, I was able to change the color of the
+highlighter, from yellow to purple, and it worked. I was also able to
+create a new palette for purple that I called throughout the
+adder.scss file.
+
+Styling the Dropdown IV: Label-less Icons: After much difficulty, I've
+decided to forgo the label, and have the highlighter icon on its own,
+in the relevant color. I realized this possibility when playing around
+with different sizes, when the simplicity of the icon appealed to
+me. It also accords with what I've said before regarding Jon Udell's
+script to "tag" annotations with color. My project is moving away from
+using verbal cues / engaging in verbal reactions. So having the color
+itself be the selection on the interface makes sense, because the
+person engages directly with that color.
+
+Coloring the icons proved extremely time consuming. I wanted each
+icon to display the color indicated in the colors label. First, I
+spent a lot of time trying to find the source of the icon to change
+the color, ended up going on icomoon, from where I still couldn't
+figure out how to do it. I also tried a bunch of different css
+solutions, coloring the h-icon-highlight to red, for example. This
+worked, but it made all the icons red. There's no way for me to do
+this just to one icon. I finally ended up by using in inline css rule
+in the html to color the entire button. This is less elegant than I
+hoped, but at this point I need to move on. I'm going to leave it as
+is and start thinking about functionality.
+
+
+Functionality:
+
+**adder.js**: This file carves a space for the adder toolbar to
+function on the webpage. It sets up basic functionality for clicking
+on the adder. In more technical terms, it creates a shadow DOM that
+controls the appearance of the adder, and an eventlistener for the
+highlight button. This call takes us to guest.coffee.
+
+**guest.coffeee**: This large file configures the commenting and
+highlighting actions that occur in the adder. It goes into complexity
+describing animation promises, anchors, metadata, visibility,
+deletion, etc, that go into retrieving and displaying annotations.
+
+**index.coffee**: This short file describes some classes that have to
+do with the highlightRange. Joe said this will be where I pass my
+custom CSS class that includes color.
+
+The onHighlight option called in addder.js here initiates a call to
+createHighlight which passes "true" for highlight into a larger
+function called createAnnotation. It's in this function that
+highlightRange runs with potentially three arguments, which I can
+configure in index.coffee. I pass a CSS class into this function as a
+third parameter, which specifies the color of the highlight.
+
+Joe: the  bulk of adder is actually configured in a file called **guest.coffee**. Joe explained that in this file also uses code from **highlighter/dom-wrap-highlighter/index.coffee**. According to Joe, the code works in more or less the order below:
+
+	adder.js:
+	176: handleCommand(event, options.onHighlight)
+
+	guest.coffee:
+	57: this.adderCtrl = new adder.Adder(…) #onHighlight calls self.createHighlight() on line 63
+	354: this.createAnnotation({$highlight: true})
+	348: targets.then(-> self.anchor(annotation))
+	293: anchor = locate(target).then(highlight) #we care about call to highlight
+	240: highlights = highlighter.highlightRange(normedRange) #doesn’t pass cssClass as second param
+
+	highlighter/dom-wrap-highlighter/index.coffee:
+	line 10: highlightRange() #could be passed cssClass
+
 
 ** Color Theory toward a Queer Theory
 /Prescribed or spontaneous?/ /Plutchik’s wheel of emotions, Trans colors/ 
 
+One of the challenges in developing the tool will be to think through
+the affordances of using color in pre-defined ways and using it more
+spontaneously.
+
+One way I am interested in using color is by assigning different
+affects to specific colors, using color theory as a guide.  Here, you
+see pictured a “wheel of emotions” developed by Robert Plutchik, a
+professor of psychology, who transposes his own theory of emotions
+into a color wheel. Here, the color differences indicate changes in
+emotional quality and saturation indicates the intensity of
+emotion. There are eight primary emotions, which run along the second
+ring: these are joy, trust, fear, surprise, sadness, disgust, anger
+and anticipation.  The more saturated colors on the inner ring
+represent more intense forms of the emotion, while the brighter colors
+on the outer rings are milder. For example, apprehension (light green)
+is a mild form of fear, while rage (dark red) is an intense form of
+anger. Plutchik also theorized emotional dyads, which are feelings
+composed of two emotions. You can see the dyad between fear and
+surprise, which is awe, or between joy and trust, which is love.  I
+imagine that students might use these colors not only to highlight
+text according to their feelings or gut reactions, but also to engage
+with other students’ highlights in the form of layering. One of the
+benefits of the Hypothes.is highlighter is that it builds a degree of
+opacity to each highlight, so that multiple highlights on the same
+piece of text will appear more saturated, and that colors can mix into
+secondary and tertiary combinations. I wonder what would happen, for
+example, if one student were to highlight a piece of text as orange,
+for “anticipation”, and another were to highlight that same piece as
+red, for “anger”. The resulting dyad, which would be red-orange,
+signifies “aggressiveness” on the chart. How does this result change
+the way we read the text? Does engaging underlying feelings that occur
+during reading enhance the way we understand we understand language or
+literary devices? My sense is that confronting and attending to these
+feelings will open up ways that students connect to what they read.
+
+/Jon Udell's fuzzy anchoring/ 
+
+Today, in the New Media Lab, I took some time to read [this incredible
+article](https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/)
+by H developer, Jon Udell, once again, very slowly. In it, Udell uses
+Hypothes.is tagging (via anchoring) functionality in order to attach
+highlights to annotated text. I spent most of my time trying to
+understand how the simple script works, looking up the various
+libraries and functions to try to wrap my mind around it all. I
+learned a lot about Javascript just by googling different parts of the
+script. And I also outlined the parts of the script in my [Javascript
+Notes](javascript_notes.md). The main takeaway here is that Udell's
+script uses *anchoring*, *tagging* and *wrapping* to append colors to
+highlighted text. Ultimately, he uses inline CSS ("background-color")
+to "tag" (.wrap()) the text (as an HTML element with &lt;span&gt;)
+with color. This idea is very interesting, but it isn't exactly what I want to do,
+which is to create a separate interface element for selecting
+colors. As you can see from my conference paper, the divorce of color
+from text is central to my project, which explores how nonverbal or
+preverbal affects engage the reading process. I would rather, then,
+that the user select a color by clicking a color instead of typing a
+word. That being said, it's impressive how Udell's code manages to use
+Hypothes.is built-in anchoring functionality in order to easily attach
+colors to text.
+
+> $(nodes).wrap('&lt;span style="background-color:' + tag + '" title="' + text + '"&gt;&lt;/span&gt;')
+
+
 /What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/
+
+** Works Cited
+
+Annotation Studio . Massachusetts Institute of Technology Hyperstudio.
+http://www.annotationstudio.org/
+
+Bean, John. Engaging Ideas: The Professor's Guide to Integrating Writing, Critical Thinking,
+and Active Learning in the Classroom . San Francisco: Jossey-Bass, 2001.
+
+Blyth, Carl S. “Exploring the Affordances of Digital Social 201 Reading for L2 Literacy: The
+Case of eComma” Digital Literacies in Foreign and Second Language . Ed. Janel Pettes
+Guikema and Lawrence Williams, CALICO Monograph Series, Vol. 12. 2014
+
+Hayles, N Katherine. How We Became Posthuman: Virtual Bodies in Cybernetics, Literature,
+and Informatics . University of Chicago Press, 2010. Print.
+
+Hypothes.is . The Hypothes.is Project. https://web.hypothes.is/
+
+Lacuna Stories . The Poetic Media Lab, Standford University. https://www.lacunastories.com/
+
+Plutchik, R. "The Nature of Emotions." /American Scientist./ Archived from the original on July
+16, 2001.
+
+Ponder . Parlor Labs, Inc. https://www.ponder.co/about/
+
+Schneider, Emily, et al. “Making Reading Visible: Social Annotation with Lacuna in the
+Humanities Classroom.” The Journal of Interactive Technology and Pedagogy , 16 June
+2016
+
+Watters, Audrey. “ Ed-Tech and Trump .” Hack Education. February 2, 2017.
+
 
 ** Resources
 - [[https://github.com/gofilipa/digital_annotation/blob/master/proposal_summary.md][Proposal Summary]]
 - [[https://github.com/hypothesis/frontend-toolkit/blob/master/docs/css-style-guide.md][CSS Guide]]
 - [[https://github.com/hypothesis/product-backlog/issues/198][Multiple Color issue on github]]
 - [[https://www.w3.org/TR/annotation-model/][W3C Annotation Standards]]
+- Levy, Sharona A., “Reading the Reader”. The Difference the Enquiry Makes . ed. Randy Bass and
+Bret Enyon. Academic Commons, January 2009.
 
 *** Meeting notes: 
 
