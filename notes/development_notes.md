@@ -1,3 +1,20 @@
+## 10.14 Deployment
+
+Last week I published [a blog post](https://digitalfellows.commons.gc.cuny.edu/2019/10/10/toward-the-end-of-a-digital-project-reflections-on-starting-over/) on the Digital Fellows blog about this project. Writing the blog post was generative for me, allowing me to rethink my goals now that most of the coding work is done. It's clear to me that I need to pursue two things: using color to engage emotions while reading (for my own research) & using color so that users & groups can assign their own meanings (for teaching generally). 
+
+The next steps: 
+- Find a way of deploying the tool for classroom use. On my home computer, I can boot the tool to my version if I change the assetRoot in **client/build/boot.js** from ‘http://localhost:3001/hypothesis/1.0.0-dummy-version/’ to './client/'. This only works on Chrome, because Firefox (apparently) doesn't doesn't store event.path info this way. The only issue here is that the highlights don't save. Also, whenever I restart the dev server (if I'm developing through the browser-extension) this boot.js file automatically refreshes to the default assetRoot. 
+- Deep dive into color theory. Now I'm looking at Joseph Albers *The Interaction of Color*, which is a classic. 
+
+
+## 9.24 Color Theory
+
+Had a meeting with Michael today about where to take this project. We discussed potential next steps and what I need to do in the final paper. 
+
+My immediate concern is to start using this tool to teach. Basically, there are two ways to deploy the tool, either a plugin or embedding it into a website. I’m going for the latter. The issue here is to boot hypothesis to my version of the tool rather than the default version.
+
+M says that when I do get around to making my commit, I should make it the best argument I can for why DH is an artist space. Think about code as scholarship, & how color highlights can "queer" the reading process. He strongly suggests that I take a deep dive ino Color Theory. And he's right---my values and saturations are off. I need to examine more color meanings beyond Plutchik's wheel of emotions. What are the right colors for this project? What colors would I use to annotate a Woolf text? To tie it to my dissertation proposal---how does this project further the promise of queer DH?
+
 ## 8.30.19 it works!
 
 <image src="../images/getting_started.png" width="400">

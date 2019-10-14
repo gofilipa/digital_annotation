@@ -380,7 +380,6 @@ Joe: the  bulk of adder is actually configured in a file called **guest.coffee**
 	highlighter/dom-wrap-highlighter/index.coffee:
 	line 10: highlightRange() #could be passed cssClass
 
-
 ** Color Theory toward a Queer Theory
 /Prescribed or spontaneous?/ /Plutchik’s wheel of emotions, Trans colors/ 
 
