@@ -3,8 +3,8 @@
 culminate in a conclusion about next steps./
 
 ** Problem 
-/Expand active reading to include affect---instinctual and emotional
-reactions to reading./
+*** Expand active reading to include affect---instinctual and emotional
+reactions to reading.
 
 This project explores digital annotation as a way to make solitary
 reading practices more embodied and engaging. I intend to modify an
@@ -85,7 +85,7 @@ community, Hypothes.is, will be the base for developing my
 customizations.
 
 ** Guiding Tension
-/The tension between the “provocative” and the “prescriptive”./
+*** The tension between the “provocative” and the “prescriptive”.
 
 In developing the tool, I wonder how annotation might expand or reduce
 the quality of the student’s engagement with the text. Here, I’m
@@ -104,8 +104,7 @@ perspective, how can giving students more nonverbal options in an
 annotation tool provoke them toward more spontaneous insights?
 
 ** Prescriptive approaches and Standardization
-
-/Existing tools & prescriptive approach to teaching close reading, Quantify everything movement, tracking students./ 
+*** Existing tools & prescriptive approach to teaching close reading, Quantify everything movement, tracking students.
 
 This color-coding feature aims to resist the pervasive and insidious
 nature of many “edtech” tools and platforms, especially those that
@@ -132,7 +131,7 @@ and empowering. Through this tool, I will experiment with active
 reading and assessment that engages moments of emotional struggle and
 insight, rather than measurable “learning outcomes”.
 
-/How features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio./
+*** How features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio.
 
 The project most relevant to my proposal is a tool called “Ponder”,
 created by a private tech company, Parlor Labs, Inc.  Like
@@ -251,31 +250,142 @@ something analogous to John Bean’s strategy of posing “beautiful
 problems” to guide class writing and discussion.
 
 ** Nonverbal Options, Enabling Constraints?
+*** N. Katherine Hayles: marking embodied/affective knowledge vs discursive/ 
 
-/How nonverbal options are provocative, spontaneity, insights? Neuroscience and nonverbal options./
+Hayles, in How We Became Posthuman has been a continued influence in
+how I think through human interaction with machines, particularly on
+the tension between embodied and disembodied knowledge. Hayles’ book
+examines the question, “How we became posthuman” by examining “how
+information lost it’s body” (2). By this phrase, Hayles means the
+idea, descendant from eighteenth century liberal humanism, that
+knowledge and feelings can exist independently of the body. She
+examines philosophical trends that prioritize rationality in the
+human, and extend into conceptions of the posthuman, which imagines
+the body as a prosthesis of the mind. In thinking about Hayles’ work,
+I’m specifically interested in how annotation engages with reading as
+an embodied practice that engages with extra-textual meaning . In
+other words, how can annotation connect more directly to knowledge as
+feeling and affect, rather than knowledge as information that exists
+purely in a textual form?
 
-/- N. Katherine Hayles: marking embodied/affective knowledge vs discursive/ 
+*** Neuroscience: Antonio Damasio on feeling in the body
 
-I am influenced by the work of N. Katherine Hayles, John Bean, and
-Amelia Abeau. These theorists’ work, which range across the subjects
-of cybernetics, college composition, and theories of the quantified
-self, situates my thinking on the role of affect in technology and in
-writing. Hayles, in How We Became Posthuman has been a continued
-influence in how I think through human interaction with machines,
-particularly on the tension between embodied and disembodied
-knowledge. Hayles’ book examines the question, “How we became
-posthuman” by examining “how information lost it’s body” (2). By this
-phrase, Hayles means the idea, descendant from eighteenth century
-liberal humanism, that knowledge and feelings can exist independently
-of the body. She examines philosophical trends that prioritize
-rationality in the human, and extend into conceptions of the
-posthuman, which imagines the body as a prosthesis of the mind. In
-thinking about Hayles’ work, I’m specifically interested in how
-annotation engages with reading as an embodied practice that engages
-with extra-textual meaning . In other words, how can annotation
-connect more directly to knowledge as feeling and affect, rather than
-knowledge as information that exists purely in a textual form?
+This tool approaches affect as a type of knowledge that extends into
+the body. The process of embodied cognition---how thinking happens
+with the body---is therefore a crucial consideration to my
+project. Neuroscientists have long disagreed over whether thinking
+properly occurs in the brain, the body, or the world. Antonio Damasio,
+a vocal proponent for embodied consciousness, explains that
+consciousness arises from emotions in the body of the organism, which
+are experienced as "somatic markers" such as rapid heartbeat or
+nausea. These emotive experiences in the body float then up to an
+organism's awareness, whereby rapid heartbeat might be noticed as
+anxiety, and nausea as disgust. Damasio makes this key distinction
+between emotion (in the body) and feeling (a mental awareness):
 
+#+BEGIN_QUOTE
+Emotions are complex, largely automated programs of /actions/
+concocted by evolution. The actions are complemented by a /cognitive/
+program that includes certain ideas and modes of cognition, but the
+world of emotions is largely one of actions carried out in our bodies,
+from facial expressions and postures to changes in viscera and
+internal milieu. Feelings of emotion, on the other hand, are composite
+/perceptions/ of what happens in our body and mind when we are
+emoting. As far as the body is concerned, feelings are images of
+actions rather than actions themselves; the world of feelings is one
+of perceptions executed in brain maps. 116-117
+#+END_QUOTE
+
+By the time a person is aware of a feeling, it has already released an
+emoting cascade in the body. According to Damasio, our feelings are
+often vague because their stimulation often incorporates internal,
+largely unconscious sensations that he calls "primordial feelings" as
+part of the emoting cascade (108). I intend for my tool to engage the
+vagueness of embodied feelings by giving the body the opportunity to
+interact with emotion haptically through the experience of using the
+computer interface. My idea is that the user's activity of making a
+text selection and choosing colors will create a rhythm of response
+that harnesses immediate and primordial feelings that occur during the
+reading process.
+
+*** Neuroscience: Engaging Affect, Enraging Ourselves
+/we need to use our emotions as tools to subvert the pressures to
+conform, adapt, be mangaged en masse./ /exploit or elide embodied experience./
+
+I hope that reading to engage affect will help to resist the ways that
+other digital annotation tools encourage standardized responses to
+reading. Some of the existing discourses on edtech, "personalized
+learning," and quantification have their counterparts in
+neuroscientific discourses about brain development and
+neuroplasticity. Coming with vastly different investments, both
+Catherine Malabou and Victoria Pitts-Taylor can be read as engaged in
+feminist projects that disrupt cultural implications of discourses
+about brain functioning and development that play into existing power
+and knowledge structures. Malabou's titular question, /What Should We
+Do With Our Brain?/, points out the unspoken assumption in these
+discourses---what she calls "neuronal ideology"---that brains should
+be made to conform and adapt to social and economic needs. Malabou
+finds a troubling parallel between "brain plasticity," which posits a
+flexible, developing brain, and capital's need for docile, networked,
+and adaptable workers. She suggests that people resist this
+understanding of "brain plasticity" by exploring another valence of
+the word plastic that is based off the noun /plastique/, which means
+"explosive." Rather than approach plastic as flexible, something that
+can be molded to fit economic needs, plastic can be an agent for
+annihiliation and creativity---the "brain-bomb"
+association. Plasticity in this sense is a means of refusal to submit
+to the managerial model, to resist complicity to capitalism:
+
+#+BEGIN_QUOTE
+To cancel the fluxes, to lower our self-controlling guard, to accept
+exploding from time to time: this is what we should do with our
+brain.... Perhaps we ought to relearn how to enrage ourselves, to
+explode against a certain culture of docility, of amenity, of the
+effacement of all conflict even as we live in a state of permanent
+war. 79
+#+END_QUOTE 
+
+Here, Malabou suggests that affect--particularly anger---is a tool for
+refusing expectations for docility and complicity. Her exhortation to
+"enrage" ourselves points to a way that people can use emotion to
+subvert pressures to be managed or conform to standards of
+productivity. By prioritizing emotional response, this annotation
+might offer a way out of pressures to standardize or track learning.
+
+*** Engaging Affect: Embodied Difference, Misreadings
+
+My tool aims to visually engage difference in responding to reading. I
+intend that the low opacities of the highlighter colors will
+facilitate the layering of one color over another, creating a visible
+palimpsest of readings. This layering feature recalls conversations in
+neuroscience about the ways that embodied cognition works within
+social contexts. Although much of neuroscientific work on "embodied
+cognition" does a good job situating thinking in the body, it tends to
+overlook how body specificity determines individual
+experience. According to Victoria Pitts-Taylor, much of this work
+generalizes the way that everyone accesses and experiences the world,
+assuming universal brain structures. In response, Pitts-Taylor
+explores how brains are shaped by real inequalities of race, gender,
+class, and sexuality, asserting that “bodily difference yields
+cognitive difference” (56). She gives the example of "mirror neurons,"
+which are neurons in the brain which activates both when we act and
+when we see someone else engaged in an action. These neurons "mirror"
+whatever action they perceive, representing the same process in the
+brain as if the body were really performing the action, and are
+therefore thought to enable empathy. According to Pitts-Taylor,
+however, simulation can actually get in the way of
+understanding. Bodily difference will cause mirror neurons to make
+mistakes, projecting one set of assumptions onto another body. She
+explains that “We cannot rely on simulation, whether propositional or
+neural, to do the work of knowing the other and of relating to them
+and feeling for them in nonviolent ways” (92). My tool aims to reveal
+this limit of identification through the layering feature. It is my
+hope that alternative reactions to a particular text will render in
+the color mixtures, in the alchemy of dissonances, combinations, and
+new concoctions that layering creates.
+
+
+*** Beautiful Problems, John Bean
 John Bean’s work also influences how I approach affect as part of an
 analytical process.  Bean’s book, Engaging Ideas , explores how
 college composition and rhetoric instructors can use writing as a
@@ -295,11 +405,9 @@ Throughout his work, I’m most influenced by power that “wonder”,
 Bean, I dwell on the power of these affects prior to their
 verbalization in traditional composition practices.
 
-/Cognitive neuroscience approaches; Embodied vs Embrained: Antonio Damasio on feeling from the body to the mind, Stanislas Dahaene on reading in the brain./
 
 ** What I Did
-
-Cosmetics:
+*** Cosmetics:
 
 **adder.html** This is the short html file for the buttons, both the
 "Annotate" and "Highlight" button that pop up together once you make a
@@ -340,8 +448,7 @@ in the html to color the entire button. This is less elegant than I
 hoped, but at this point I need to move on. I'm going to leave it as
 is and start thinking about functionality.
 
-
-Functionality:
+*** Functionality:
 
 **adder.js**: This file carves a space for the adder toolbar to
 function on the webpage. It sets up basic functionality for clicking
@@ -381,7 +488,7 @@ Joe: the  bulk of adder is actually configured in a file called **guest.coffee**
 	line 10: highlightRange() #could be passed cssClass
 
 ** Color Theory toward a Queer Theory
-/Prescribed or spontaneous?/ /Plutchik’s wheel of emotions, Trans colors/ 
+*** Prescribed or spontaneous? Plutchik’s wheel of emotions, Trans colors/ 
 
 One of the challenges in developing the tool will be to think through
 the affordances of using color in pre-defined ways and using it more
@@ -418,7 +525,7 @@ during reading enhance the way we understand we understand language or
 literary devices? My sense is that confronting and attending to these
 feelings will open up ways that students connect to what they read.
 
-/Jon Udell's fuzzy anchoring/ 
+*** Jon Udell's fuzzy anchoring/ 
 
 Today, in the New Media Lab, I took some time to read [this incredible
 article](https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/)
@@ -444,10 +551,7 @@ Hypothes.is built-in anchoring functionality in order to easily attach
 colors to text.
 
 > $(nodes).wrap('&lt;span style="background-color:' + tag + '" title="' + text + '"&gt;&lt;/span&gt;')
-
-
-/What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/
-
+*** What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/
 ** Works Cited
 
 Annotation Studio . Massachusetts Institute of Technology Hyperstudio.
