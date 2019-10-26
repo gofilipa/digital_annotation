@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-10-22 Tue 11:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Filipa  Calado" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgec59a6f">1. Outline</a>
+<ul>
+<li><a href="#org520d53d">1.1. Problem</a>
+<ul>
+<li><a href="#orgf9d7de9">1.1.1. Expand active reading to include affect&#x2014;instinctual and emotional</a></li>
+<li><a href="#org0ddbcac">1.1.2. What is Hypothesis?</a></li>
+</ul>
+</li>
+<li><a href="#org694aa99">1.2. Guiding Tension</a>
+<ul>
+<li><a href="#orgfd8b4e9">1.2.1. The tension between the “provocative” and the “prescriptive”.</a></li>
+</ul>
+</li>
+<li><a href="#orgd0787a3">1.3. Prescriptive approaches and Standardization</a>
+<ul>
+<li><a href="#orgb7620cf">1.3.1. Existing tools &amp; prescriptive approach to teaching close reading, Quantify everything movement, tracking students.</a></li>
+<li><a href="#org8ee0c16">1.3.2. How features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio.</a></li>
+</ul>
+</li>
+<li><a href="#org46441f8">1.4. Nonverbal Options: neuroscience and philosophy</a>
+<ul>
+<li><a href="#org06bb38a">1.4.1. How I Use Color: Engaging Emotions</a></li>
+<li><a href="#org117fb70">1.4.2. Beautiful Problems, Enraging Ourselves</a></li>
+<li><a href="#orgd96be74">1.4.3. Hayles: Embodied Knowledge</a></li>
+<li><a href="#orgfc1d588">1.4.4. Damasio: Embodied Cognition</a></li>
+<li><a href="#orged6193c">1.4.5. Pitts-Taylor: Embodied Difference, Misreadings</a></li>
+</ul>
+</li>
+<li><a href="#org27627d1">1.5. What I Did: Appendix?</a>
+<ul>
+<li><a href="#orga8c2d17">1.5.1. <span class="todo TODO">TODO</span> how do I incorporate a narrative of my labor?</a></li>
+<li><a href="#orge3bb780">1.5.2. Cosmetics:</a></li>
+<li><a href="#org7a3455f">1.5.3. Functionality:</a></li>
+</ul>
+</li>
+<li><a href="#orgfc077eb">1.6. Color Theory toward a Queer Theory</a>
+<ul>
+<li><a href="#org63c2f3a">1.6.1. Prescribed or spontaneous colors?</a></li>
+<li><a href="#orgd3d71bd">1.6.2. Jon Udell's fuzzy anchoring/</a></li>
+<li><a href="#org8e5578e">1.6.3. What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/</a></li>
+</ul>
+</li>
+<li><a href="#org3ecebd6">1.7. Works Cited</a></li>
+<li><a href="#org5606011">1.8. Resources</a>
+<ul>
+<li><a href="#org15089be">1.8.1. Meeting notes:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgec59a6f" class="outline-2">
+<h2 id="orgec59a6f"><span class="section-number-2">1</span> Outline</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<i>The idea is that I bastardize my previous paper, interweave my dev notes as a narrative, make some proposals for using color, and
+culminate in a conclusion about next steps.</i>
+</p>
+</div>
+
+<div id="outline-container-org520d53d" class="outline-3">
+<h3 id="org520d53d"><span class="section-number-3">1.1</span> Problem</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgf9d7de9" class="outline-4">
+<h4 id="orgf9d7de9"><span class="section-number-4">1.1.1</span> Expand active reading to include affect&#x2014;instinctual and emotional</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+reactions to reading.
+</p>
+
+<p>
+This project explores digital annotation as a way to make solitary
+reading practices more embodied and engaging. I modified an existing
+annotation tool to use in my <i>English 220: Introduction to Writing
+about Literature</i> course at Hunter College. As an instructor for this
+course, I learned the difficulty of teaching active reading skills in
+the classroom. “Active reading” denotes a variety of actions, such as
+highlighting, underlining, and writing in the margin, to emphasize
+moments of interest that require close attention. These strategies
+assist the reader to identify concrete elements of the text and guide
+her in constructing a critical response. However, as any English
+instructor of lower-level undergraduate classes knows, these
+strategies do not come naturally to most readers, and they have to be
+cultivated through repeated modeling and practice in the classroom.
+Instructors must make visible the attention to language—specific
+sentences, phrases and words—required in close reading, and
+demonstrate how to analyze language in depth, particularly the
+elaboration of meaning or significance. From my experience, I’ve found
+that using a digital annotation tool in the classroom is immensely
+helpful for modeling “active reading” strategies for students and
+following their progress as they complete the reading. By annotating
+passages as a class, I can guide them toward making incisive and
+thoughtful responses; and by having them annotate the text as
+homework, I am able to see what my students are thinking about, how
+they incorporated their knowledge of figurative language that we
+learned in class, and how they work towards making critical arguments
+about their reading.
+</p>
+
+<p>
+While this tool has been immensely helpful for teaching close and
+critical attention to language, I recently find myself more interested
+in accessing and harnessing other kinds of responses to reading. For
+this project, I will explore how this sense of “active reading” can be
+expanded to include affect in order to engage nonverbal and embodied
+responses to text. As Sharona Levy points out, it is very difficult to
+understand how students process a text: “there is no mechanism to open
+their heads and see which neurons are firing while they are reading”
+(5). Traditional annotation only engages critical activity in its
+textual, verbalized form. Therefore, I propose to apply digital
+annotation toward engaging nonverbal reactions to reading. While the
+current tool allows me to make visible the role of analysis and
+interpretation, and to follow my students’ progress in learning close
+reading, it doesn’t address the emotional and instinctual reactions
+that often occur in reading. An additional feature, specifically, the
+option of a multi-color highlighter, would allow students to confront
+their more immediate responses, feelings, and gut reactions during the
+reading process. By reflecting on their color choices, students may
+begin to understand how their feelings can be part of a larger, more
+formalized analytical process. With more options, students can
+identify moments of interest, confusion, or other affects as moments
+that deserve further scrutiny. Additionally, they can also use colors
+as flexible categories that indicate different areas of
+understanding&#x2014;such as figuration, themes, or syntax. In this way,
+the tool will not only engage affect and bodily reactions, but also
+allow for organizing and categorizing different types of annotations.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ddbcac" class="outline-4">
+<h4 id="org0ddbcac"><span class="section-number-4">1.1.2</span> What is Hypothesis?</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+My proposal would modify the appearance of the highligther by offering
+options for highlighter colors. Rather than just have yellow, users
+can choose among a variety of colors to highlight the text. As an
+open-source project, with extensive documentation and a supportive
+developer community, Hypothes.is, will be the base for developing my
+customizations. Hypothes.is operates as a browser extension and
+embeddable script, which means that it can be activated and used on
+any page that appears on a web browser. To use hypothes.is, the user
+must first create an account on the Hypothes.is homepage. Then, they
+have two options. They can either navigate to a website that already
+has hypothes.is embedded and activated, or they can to download a
+browser extension and activate it. Then, to make an annotation, users
+highlight the desired text and type their comment in a simple text box
+that appears. After saving their comment, the original text is
+highlighted, and all users may view the annotation on a collapsible
+sidebar. By selecting the “reply” button, users then can respond to
+the comment, which will appear below the previous annotation on the
+sidebar.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org694aa99" class="outline-3">
+<h3 id="org694aa99"><span class="section-number-3">1.2</span> Guiding Tension</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgfd8b4e9" class="outline-4">
+<h4 id="orgfd8b4e9"><span class="section-number-4">1.2.1</span> The tension between the “provocative” and the “prescriptive”.</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+In developing the tool, I wonder how annotation might expand or reduce
+the quality of the student’s engagement with the text. Here, I’m
+concerned in the tension between what I call the
+“provocative”&#x2014;opening up the text to new insights&#x2014;and the
+“prescriptive”&#x2014;limiting a student’s interaction with the text to a
+predetermined set of choices or options for responding. In exploring
+this tension, I have three main questions: First, how do annotation
+tools support a prescriptive approach to teaching close reading: how
+do they create a standardized method or process in responding to
+texts? Second, more specifically, do certain features, such as colors,
+categories, or tags, for example, actually limit the kinds of
+responses they could have without these prompts? Do these options
+actually create a confining structure? And finally, from the opposite
+perspective, how can giving students more nonverbal options in an
+annotation tool provoke them toward more spontaneous insights?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd0787a3" class="outline-3">
+<h3 id="orgd0787a3"><span class="section-number-3">1.3</span> Prescriptive approaches and Standardization</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orgb7620cf" class="outline-4">
+<h4 id="orgb7620cf"><span class="section-number-4">1.3.1</span> Existing tools &amp; prescriptive approach to teaching close reading, Quantify everything movement, tracking students.</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+This color-coding feature aims to resist the pervasive and insidious
+nature of many “edtech” tools and platforms, especially those that
+quantify or “measure” student learning. The effects of edtech range
+from exploitative to harmful, as Audrey Watters explains in her
+extensive investigations on dangers of collecting information on
+students, which not only makes them vulnerable to those who would
+profit from them economically, but also reduces them data points and
+labels, such as “cheat” or “at risk”. In “ Ed-Tech and Trump ”,
+Watters explains that the desire to track and collect student data is
+closely associated with the desire to harm certain demographics, as
+was the case with the first computational census that began in Nazi
+Germany.  More recently, in a talk at the Graduate Center, Watters
+discusses how certain edtech tools that track student
+performance&#x2014;and purport to create “personalized” learning
+experiences&#x2014;actually work to standardize and automate
+education. Keeping these conversations in mind, I’m interested in
+creating a tool that resists this trend of quantification. Therefore,
+by experimenting with nonverbal, embodied reactions to reading, I hope
+to achieve two things: first, as stated above, I hope to examine the
+role of affect in critical thinking, and second, I hope to explore how
+“tracking” can serve ends that are not exploitative, but provocative
+and empowering. Through this tool, I will experiment with active
+reading and assessment that engages moments of emotional struggle and
+insight, rather than measurable “learning outcomes”.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ee0c16" class="outline-4">
+<h4 id="org8ee0c16"><span class="section-number-4">1.3.2</span> How features limit the kinds of responses, creates structure that confines student thinking? Usages of existing tools: ponder, lacuna, annotation studio.</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+The project most relevant to my proposal is a tool called “Ponder”,
+created by a private tech company, Parlor Labs, Inc.  Like
+Hypothes.is, Ponder is a browser add-on tool that can be activated on
+any webpage. The company describes it as a “micro-response tool”, that
+purports to “give teachers a view into the ‘invisible’ process of
+learning through higher-order critical thinking” (“About”). The tool
+shares a basic functionality with Hypothes.is, which is highlighting
+text and responding through a written annotation. But has some
+additional features, including options for different “reactions”,
+called “sentiment tags”, and options for choosing from a list of
+“themes”, compiled and customized by the teacher. The “sentiment tags”
+are particularly interesting, because they allow students to
+categorize and color-code their responses according to
+“clarification”, “analysis” or “emotion”. Unfortunately, the project
+is proprietary, and charges a fee for its full usage. Carl Byth
+explains that goal of this “microresponse” strategy is to condense
+student responses into a simple expression that others can most easily
+engage with. These “sentiment tags” facilitate reading as a social
+experience:
+</p>
+
+<p>
+&gt; To encourage students to “read each other,” Ponder limits responses
+&gt; to short phrases called sentiments that fall into three categories:
+&gt; comments about text comprehension (e.g., “I don’t get this”),
+&gt; critiques of the text (e.g., “This smells like hyperbole”), and
+&gt; emotional responses to the text (e.g., “Tsk, I disapprove.”) Blyth 209
+</p>
+
+<p>
+Here, the pithy annotations allow interpretations to be shared and
+recognized among readers. A comparison could be made between these
+“microresponses” and emoticons or emojis, which are a more exaggerated
+way of condensing feeling into a expression that’s easily shared
+across social media. Despite the obvious social benefits of this tool,
+this prefabrication of responses seems constraining. By forcing the
+reader to choose between “clarification”, “analysis” or “emotion”, is
+the tool determining what kind of reaction someone might have? Or do
+these three tagging option (the cognitive, analytic, or emotional)
+function as an “enabling constraint”, that is, as a productive
+scaffolding that guides students toward thinking more deeply about
+their reading?  Keeping these questions in mind, I now turn to another
+tool that functions similarly to Ponder.
+</p>
+
+<p>
+This other example of digital annotation comes from a project called
+“Lacuna Stories”, developed by the Poetic Media Lab at Stanford, where
+it is incorporated as a Learning Management System. One major
+difference between Lacuna Stories and tools like Ponder or
+Hypothesi.is is that Lacuna Stories is its own platform for social
+reading and writing. As such, it is used by schools like Stanford as a
+central organizing space for a course, like Blackboard or Canvas, and
+provides a reading and writing interface for engaging with course
+materials. Despite this difference, the annotation component here
+functions similarly to Ponder: the reader highlights a section of the
+text, and has the option of making a comment. Then, the reader is
+prompted by options for different types of responses. [ SLIDE ] Like
+Ponder, there are categories for responding, which are also
+color-coded: here, the categories are “Comment”, “Question”,
+“Analyze”, “Connect”.
+</p>
+
+<p>
+According to Stanford instructors Amir Eshel and Brian Johnsrud, one
+of the tool’s main benefits is how it visualizes the student’s
+solitary responses to reading in a way that enhances classroom
+conversations about the text. It allows the instructors to create a
+“dialogic space” within the classroom that explores and expands upon
+student annotations. However, while this approach emphasizes students’
+reactions to reading, it also runs the risk of prescribing or
+establishing certain textual interpretations over others. The
+instructors admit that Lacuna creates a trade-off between what they
+call “guidance and discovery”, that is, “a tension that must be
+negotiated between the desire to allow students the space for
+intellectual discovery and the desire to guide their learning along a
+pre-specified path” (“Making Reading Visible”). This tension emerges
+when the act of annotating primes students toward more fixed
+interpretations of the text before they even enter into the classroom.
+</p>
+
+<p>
+The effect of this priming is enhanced when we consider another aspect
+of the tool, which tracks and visualizes student annotations across
+the platform. For, unlike Ponder and Hypothes.is, Lacuna Stories
+contains an “Annotation Dashboard,” only visible to instructors, for
+them to follow their students’ progress as they make annotations. As
+the instructors at Stanford point out, “annotations&#x2026; serve as an
+accountability mechanism for completing assigned reading in a timely
+fashion, because instructors will see students’ activity on the text
+and students will know that instructors can see this activity.” On
+this “Annotations Dashboard”, student data such as the number and
+length of annotation is quantified and visualized in a series of
+graphs and charts. [ SLIDE ] Here is an example of what the dashboard
+looks like. In the panel, “Filter by Time”, instructors can view the
+raw number of annotations made on any given day of the course, getting
+a sense of daily participation. In “Annotation Details”, a series of
+pie charts indicate the relative amount of annotations by category,
+the length for each annotation, and the ratio of shared to
+private. Here, in particular, I wonder at the purpose of tracking the
+length of each annotation, and how such metrics might prioritize the
+quantity of writing as an assessment criterion. Finally, the “Network”
+section connects students to the texts they have annotated, where the
+links between them are weighted according to the amount of annotations
+each student made on each text. By directly visualizing quantitative
+(rather than qualitative) information about student annotations, the
+Annotation Dashboard potentially engages in the reductive effects of
+certain edtech tools that Audrey Watters warns about.
+</p>
+
+<p>
+Interestingly, however, there is a way that the tool uses quantified
+data in order to harness aspects of reading that cannot be
+quantified. The visualization of heavily annotated areas of text (in
+the “Network” panel) allows the instructors to identify moments of
+intellectual disagreement between annotations, and turn them back into
+sites of affect. The instructors explain that, “By using Lacuna as a
+window into students’ reading, [we] were able to pinpoint the exact
+places in the text that generated the most frustration, confusion, or
+disagreement [among] students” (“Making Reading Visible”). Here, the
+threaded annotations, where students engage in debate and conversation
+about the text, serve as an indicator of tension, what I’ll call
+productive affects , in their reading. Instructors can then turn the
+class’s attention to exploring more fully these moments of
+tension. The emphasis here on frustration and confusion enacts
+something analogous to John Bean’s strategy of posing “beautiful
+problems” to guide class writing and discussion.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org46441f8" class="outline-3">
+<h3 id="org46441f8"><span class="section-number-3">1.4</span> Nonverbal Options: neuroscience and philosophy</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org06bb38a" class="outline-4">
+<h4 id="org06bb38a"><span class="section-number-4">1.4.1</span> How I Use Color: Engaging Emotions</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+My project aims to use color in a way that enages and activates
+nonverbal and affective responses to reading. One way I am interested
+in using color is by assigning different affects to specific colors,
+using color theory as a guide.  Here, you see pictured a “wheel of
+emotions” developed by Robert Plutchik, a professor of psychology, who
+transposes his own theory of emotions into a color wheel. Here, the
+color differences indicate changes in emotional quality and saturation
+indicates the intensity of emotion. There are eight primary emotions,
+which run along the second ring: these are joy, trust, fear, surprise,
+sadness, disgust, anger and anticipation.  The more saturated colors
+on the inner ring represent more intense forms of the emotion, while
+the brighter colors on the outer rings are milder. For example,
+apprehension (light green) is a mild form of fear, while rage (dark
+red) is an intense form of anger. Plutchik also theorized emotional
+dyads, which are feelings composed of two emotions. You can see the
+dyad between fear and surprise, which is awe, or between joy and
+trust, which is love.  I imagine that students might use these colors
+not only to highlight text according to their feelings or gut
+reactions, but also to engage with other students’ highlights in the
+form of layering. One of the benefits of the Hypothes.is highlighter
+is that it builds a degree of opacity to each highlight, so that
+multiple highlights on the same piece of text will appear more
+saturated, and that colors can mix into secondary and tertiary
+combinations. I wonder what would happen, for example, if one student
+were to highlight a piece of text as orange, for “anticipation”, and
+another were to highlight that same piece as red, for “anger”. The
+resulting dyad, which would be red-orange, signifies “aggressiveness”
+on the chart. How does this result change the way we read the text?
+Does engaging underlying feelings that occur during reading enhance
+the way we understand we understand language or literary devices? My
+sense is that confronting and attending to these feelings will open up
+ways that students connect to what they read.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org117fb70" class="outline-4">
+<h4 id="org117fb70"><span class="section-number-4">1.4.2</span> Beautiful Problems, Enraging Ourselves</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+<i>we need to use our emotions as tools to subvert the pressures to
+conform, adapt, be mangaged en masse.</i> <i>exploit or elide embodied experience.</i>
+</p>
+
+<p>
+I hope that reading to engage affect will help to resist the ways that
+other digital annotation tools encourage standardized responses to
+reading. John Bean suggests instructors organize their lessons around
+“problems”, specifically, “beautiful problems… [which] create natural
+critical learning environments” (3). He explains that good writing
+assignments provoke a kind of productive discomfort, and that academic
+writing ought to capitalize on this “intellectual and often emotional
+struggle” (23). According to Bean, this struggle emerges with the
+awareness that a problem exists, which students must attempt to
+resolve. I’m interested in exploring how “beautiful problems” create
+moments of insight and spontaneous response.  Throughout his work, I’m
+most influenced by power that “wonder”, “discomfort” and “struggle”
+have in stimulating thinking. But unlike Bean, I dwell on the power of
+these affects prior to their verbalization in traditional composition
+practices
+</p>
+
+<p>
+Some of the existing discourses on edtech, "personalized learning,"
+and quantification have their counterparts in neuroscientific
+discourses about brain development and neuroplasticity. Catherine
+Malabou explores how the cultural implications of discourses about
+brain functioning and development play into existing power and
+knowledge structures. Malabou's titular question, <i>What Should We Do
+With Our Brain?</i>, points out the unspoken assumption in these
+discourses&#x2014;what she calls "neuronal ideology"&#x2014;that brains should
+be made to conform and adapt to social and economic needs. Malabou
+finds a troubling parallel between "brain plasticity," which posits a
+flexible, developing brain, and capital's need for docile, networked,
+and adaptable workers. She suggests that people resist this
+understanding of "brain plasticity" by exploring another valence of
+the word plastic that is based off the noun <i>plastique</i>, which means
+"explosive." Rather than approach plastic as flexible, something that
+can be molded to fit economic needs, plastic can be an agent for
+annihiliation and creativity&#x2014;the "brain-bomb"
+association. Plasticity in this sense is a means of refusal to submit
+to the managerial model, to resist complicity to capitalism:
+</p>
+
+<blockquote>
+<p>
+To cancel the fluxes, to lower our self-controlling guard, to accept
+exploding from time to time: this is what we should do with our
+brain&#x2026;. Perhaps we ought to relearn how to enrage ourselves, to
+explode against a certain culture of docility, of amenity, of the
+effacement of all conflict even as we live in a state of permanent
+war. 79
+</p>
+</blockquote>
+
+<p>
+Here, Malabou suggests that affect&#x2013;particularly anger&#x2014;is a tool for
+refusing expectations for docility and complicity. Her exhortation to
+"enrage" ourselves points to a way that people can use emotion to
+subvert pressures to be managed or conform to standards of
+productivity. 
+</p>
+
+<p>
+By prioritizing emotional response, this annotation
+might offer a way out of pressures to standardize or track learning.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd96be74" class="outline-4">
+<h4 id="orgd96be74"><span class="section-number-4">1.4.3</span> Hayles: Embodied Knowledge</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+It is my hope that nonverbal options will provoke students toward
+making more spontaneous insights. The first intervention my tool makes
+is making a distinction between embodied and disembodied
+learning. N. Katherine Hayles, in <i>How We Became Posthuman</i> has been a
+continued influence in how I think through human interaction with
+machines, particularly on the question of embodiment. Hayles’ book
+examines “how information lost it’s body” (2)&#x2014;the idea, descendant
+from eighteenth century liberal humanism, that knowledge and feelings
+can exist independently of the body. This prioritization of
+rationality in the human extends into conceptions of the posthuman,
+which imagines the body as a prosthesis of the mind. In thinking about
+Hayles’ work, I’m specifically interested in how annotation can
+activate reading as an embodied practice that engages with
+extra-textual meaning. In other words, how can annotation connect more
+directly to knowledge as feeling and affect, rather than knowledge as
+information that exists purely in a textual form?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc1d588" class="outline-4">
+<h4 id="orgfc1d588"><span class="section-number-4">1.4.4</span> Damasio: Embodied Cognition</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<p>
+This tool approaches affect as a type of knowledge that extends into
+the body, and intends that the user interface will engage bodily
+experience. The process of embodied cognition&#x2014;how thinking happens
+with the body&#x2014;is therefore a crucial consideration to my
+project. Neuroscientists have long disagreed over whether thinking
+properly occurs in the brain, the body, or the world. Antonio Damasio,
+a vocal proponent for embodied consciousness, explains that
+consciousness arises from emotions in the body of the organism, which
+are experienced as "somatic markers" such as rapid heartbeat or
+nausea. These emotive experiences in the body float then up to an
+organism's awareness, whereby rapid heartbeat might be noticed as
+anxiety, and nausea as disgust. Damasio makes this key distinction
+between emotion (in the body) and feeling (a mental awareness):
+</p>
+
+<blockquote>
+<p>
+Emotions are complex, largely automated programs of <i>actions</i>
+concocted by evolution. The actions are complemented by a <i>cognitive</i>
+program that includes certain ideas and modes of cognition, but the
+world of emotions is largely one of actions carried out in our bodies,
+from facial expressions and postures to changes in viscera and
+internal milieu. Feelings of emotion, on the other hand, are composite
+<i>perceptions</i> of what happens in our body and mind when we are
+emoting. As far as the body is concerned, feelings are images of
+actions rather than actions themselves; the world of feelings is one
+of perceptions executed in brain maps. 116-117
+</p>
+</blockquote>
+
+<p>
+By the time a person is aware of a feeling, it has already released an
+emoting cascade in the body. According to Damasio, our feelings are
+often vague because their stimulation often incorporates internal,
+largely unconscious sensations that he calls "primordial feelings" as
+part of the emoting cascade (108). I intend for my tool to engage the
+vagueness of embodied feelings by giving the body the opportunity to
+interact with emotion haptically through the experience of using the
+computer interface. My idea is that the user's activity of making a
+text selection and choosing colors will create a rhythm of response
+that harnesses immediate and primordial feelings that occur during the
+reading process.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orged6193c" class="outline-4">
+<h4 id="orged6193c"><span class="section-number-4">1.4.5</span> Pitts-Taylor: Embodied Difference, Misreadings</h4>
+<div class="outline-text-4" id="text-1-4-5">
+<p>
+My tool aims to visually engage difference in responding to reading. I
+intend that the low opacities of the highlighter colors will
+facilitate the layering of one color over another, creating a visible
+palimpsest of readings. This layering feature recalls conversations in
+neuroscience about the ways that embodied cognition works within
+social contexts. Although much of neuroscientific work on "embodied
+cognition" does a good job situating thinking in the body, it tends to
+overlook how body specificity determines individual
+experience. According to Victoria Pitts-Taylor, much of this work
+generalizes the way that everyone accesses and experiences the world,
+assuming universal brain structures. In response, Pitts-Taylor
+explores how brains are shaped by real inequalities of race, gender,
+class, and sexuality, asserting that “bodily difference yields
+cognitive difference” (56). She gives the example of "mirror neurons,"
+which are neurons in the brain which activates both when we act and
+when we see someone else engaged in an action. These neurons "mirror"
+whatever action they perceive, representing the same process in the
+brain as if the body were really performing the action, and are
+therefore thought to enable empathy. According to Pitts-Taylor,
+however, simulation can actually get in the way of
+understanding. Bodily difference will cause mirror neurons to make
+mistakes, projecting one set of assumptions onto another body. She
+explains that “We cannot rely on simulation, whether propositional or
+neural, to do the work of knowing the other and of relating to them
+and feeling for them in nonviolent ways” (92). My tool aims to reveal
+this limit of identification through the layering feature. It is my
+hope that alternative reactions to a particular text will render in
+the color mixtures, in the alchemy of dissonances, combinations, and
+new concoctions that layering creates.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org27627d1" class="outline-3">
+<h3 id="org27627d1"><span class="section-number-3">1.5</span> What I Did: Appendix?</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-orga8c2d17" class="outline-4">
+<h4 id="orga8c2d17"><span class="section-number-4">1.5.1</span> <span class="todo TODO">TODO</span> how do I incorporate a narrative of my labor?</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+Little snippets of code
+Little snippets of code descriptions
+A narrative of my progress (boring)
+A fragmentary narrative of my progress&#x2014;excerpts and dates. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge3bb780" class="outline-4">
+<h4 id="orge3bb780"><span class="section-number-4">1.5.2</span> Cosmetics:</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+<b><b>adder.html</b></b> This is the short html file for the buttons, both the
+"Annotate" and "Highlight" button that pop up together once you make a
+text selection. I was able to make more buttons (which didn't actually
+work when pressed) on the toolbar by duplicating the html within the
+file.
+</p>
+
+<p>
+<b><b>adder.scss</b></b> This is the styling for the adder, including labels,
+colors, animations. I was able to change the color/appearance of the
+adder buttons by messing around here, calling new colors from the
+variables file.
+</p>
+
+<p>
+<b><b>variables.scss</b></b> This defines all the colors to be used in the
+UI. Starting at line 124, I was able to change the color of the
+highlighter, from yellow to purple, and it worked. I was also able to
+create a new palette for purple that I called throughout the
+adder.scss file.
+</p>
+
+<p>
+Styling the Dropdown IV: Label-less Icons: After much difficulty, I've
+decided to forgo the label, and have the highlighter icon on its own,
+in the relevant color. I realized this possibility when playing around
+with different sizes, when the simplicity of the icon appealed to
+me. It also accords with what I've said before regarding Jon Udell's
+script to "tag" annotations with color. My project is moving away from
+using verbal cues / engaging in verbal reactions. So having the color
+itself be the selection on the interface makes sense, because the
+person engages directly with that color.
+</p>
+
+<p>
+Coloring the icons proved extremely time consuming. I wanted each
+icon to display the color indicated in the colors label. First, I
+spent a lot of time trying to find the source of the icon to change
+the color, ended up going on icomoon, from where I still couldn't
+figure out how to do it. I also tried a bunch of different css
+solutions, coloring the h-icon-highlight to red, for example. This
+worked, but it made all the icons red. There's no way for me to do
+this just to one icon. I finally ended up by using in inline css rule
+in the html to color the entire button. This is less elegant than I
+hoped, but at this point I need to move on. I'm going to leave it as
+is and start thinking about functionality.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7a3455f" class="outline-4">
+<h4 id="org7a3455f"><span class="section-number-4">1.5.3</span> Functionality:</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<p>
+<b><b>adder.js</b></b>: This file carves a space for the adder toolbar to
+function on the webpage. It sets up basic functionality for clicking
+on the adder. In more technical terms, it creates a shadow DOM that
+controls the appearance of the adder, and an eventlistener for the
+highlight button. This call takes us to guest.coffee.
+</p>
+
+<p>
+<b><b>guest.coffeee</b></b>: This large file configures the commenting and
+highlighting actions that occur in the adder. It goes into complexity
+describing animation promises, anchors, metadata, visibility,
+deletion, etc, that go into retrieving and displaying annotations.
+</p>
+
+<p>
+<b><b>index.coffee</b></b>: This short file describes some classes that have to
+do with the highlightRange. Joe said this will be where I pass my
+custom CSS class that includes color.
+</p>
+
+<p>
+The onHighlight option called in addder.js here initiates a call to
+createHighlight which passes "true" for highlight into a larger
+function called createAnnotation. It's in this function that
+highlightRange runs with potentially three arguments, which I can
+configure in index.coffee. I pass a CSS class into this function as a
+third parameter, which specifies the color of the highlight.
+</p>
+
+<p>
+Joe: the  bulk of adder is actually configured in a file called <b><b>guest.coffee</b></b>. Joe explained that in this file also uses code from <b><b>highlighter/dom-wrap-highlighter/index.coffee</b></b>. According to Joe, the code works in more or less the order below:
+</p>
+
+<p>
+adder.js:
+176: handleCommand(event, options.onHighlight)
+</p>
+
+<p>
+guest.coffee:
+57: this.adderCtrl = new adder.Adder(…) #onHighlight calls self.createHighlight() on line 63
+354: this.createAnnotation({$highlight: true})
+348: targets.then(-&gt; self.anchor(annotation))
+293: anchor = locate(target).then(highlight) #we care about call to highlight
+240: highlights = highlighter.highlightRange(normedRange) #doesn’t pass cssClass as second param
+</p>
+
+<p>
+highlighter/dom-wrap-highlighter/index.coffee:
+line 10: highlightRange() #could be passed cssClass
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfc077eb" class="outline-3">
+<h3 id="orgfc077eb"><span class="section-number-3">1.6</span> Color Theory toward a Queer Theory</h3>
+<div class="outline-text-3" id="text-1-6">
+</div>
+<div id="outline-container-org63c2f3a" class="outline-4">
+<h4 id="org63c2f3a"><span class="section-number-4">1.6.1</span> Prescribed or spontaneous colors?</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<p>
+One of the challenges in developing the tool will be to think through
+the affordances of using color in pre-defined ways and using it more
+spontaneously.
+</p>
+
+<p>
+Trans colors
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd3d71bd" class="outline-4">
+<h4 id="orgd3d71bd"><span class="section-number-4">1.6.2</span> Jon Udell's fuzzy anchoring/</h4>
+<div class="outline-text-4" id="text-1-6-2">
+<p>
+Today, in the New Media Lab, I took some time to read [this incredible
+article](<a href="https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/">https://web.hypothes.is/blog/do-it-yourself-anchoring-and-the-evolution-of-the-hypothesis-toolkit/</a>)
+by H developer, Jon Udell, once again, very slowly. In it, Udell uses
+Hypothes.is tagging (via anchoring) functionality in order to attach
+highlights to annotated text. I spent most of my time trying to
+understand how the simple script works, looking up the various
+libraries and functions to try to wrap my mind around it all. I
+learned a lot about Javascript just by googling different parts of the
+script. And I also outlined the parts of the script in my [Javascript
+Notes](javascript<sub>notes.md</sub>). The main takeaway here is that Udell's
+script uses <b>anchoring</b>, <b>tagging</b> and <b>wrapping</b> to append colors to
+highlighted text. Ultimately, he uses inline CSS ("background-color")
+to "tag" (.wrap()) the text (as an HTML element with &amp;lt;span&amp;gt;)
+with color. This idea is very interesting, but it isn't exactly what I want to do,
+which is to create a separate interface element for selecting
+colors. As you can see from my conference paper, the divorce of color
+from text is central to my project, which explores how nonverbal or
+preverbal affects engage the reading process. I would rather, then,
+that the user select a color by clicking a color instead of typing a
+word. That being said, it's impressive how Udell's code manages to use
+Hypothes.is built-in anchoring functionality in order to easily attach
+colors to text.
+</p>
+
+<p>
+&gt; $(nodes).wrap('&amp;lt;span style="background-color:' + tag + '" title="' + text + '"&amp;gt;&amp;lt;/span&amp;gt;')
+</p>
+</div>
+</div>
+<div id="outline-container-org8e5578e" class="outline-4">
+<h4 id="org8e5578e"><span class="section-number-4">1.6.3</span> What can queer theory add to DH methodologies? How can we enable “Touching without Touching”/</h4>
+</div>
+</div>
+<div id="outline-container-org3ecebd6" class="outline-3">
+<h3 id="org3ecebd6"><span class="section-number-3">1.7</span> Works Cited</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+Annotation Studio . Massachusetts Institute of Technology Hyperstudio.
+<a href="http://www.annotationstudio.org/">http://www.annotationstudio.org/</a>
+</p>
+
+<p>
+Bean, John. Engaging Ideas: The Professor's Guide to Integrating Writing, Critical Thinking,
+and Active Learning in the Classroom . San Francisco: Jossey-Bass, 2001.
+</p>
+
+<p>
+Blyth, Carl S. “Exploring the Affordances of Digital Social 201 Reading for L2 Literacy: The
+Case of eComma” Digital Literacies in Foreign and Second Language . Ed. Janel Pettes
+Guikema and Lawrence Williams, CALICO Monograph Series, Vol. 12. 2014
+</p>
+
+<p>
+Hayles, N Katherine. How We Became Posthuman: Virtual Bodies in Cybernetics, Literature,
+and Informatics . University of Chicago Press, 2010. Print.
+</p>
+
+<p>
+Hypothes.is . The Hypothes.is Project. <a href="https://web.hypothes.is/">https://web.hypothes.is/</a>
+</p>
+
+<p>
+Lacuna Stories . The Poetic Media Lab, Standford University. <a href="https://www.lacunastories.com/">https://www.lacunastories.com/</a>
+</p>
+
+<p>
+Plutchik, R. "The Nature of Emotions." <i>American Scientist.</i> Archived from the original on July
+16, 2001.
+</p>
+
+<p>
+Ponder . Parlor Labs, Inc. <a href="https://www.ponder.co/about/">https://www.ponder.co/about/</a>
+</p>
+
+<p>
+Schneider, Emily, et al. “Making Reading Visible: Social Annotation with Lacuna in the
+Humanities Classroom.” The Journal of Interactive Technology and Pedagogy , 16 June
+2016
+</p>
+
+<p>
+Watters, Audrey. “ Ed-Tech and Trump .” Hack Education. February 2, 2017.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5606011" class="outline-3">
+<h3 id="org5606011"><span class="section-number-3">1.8</span> Resources</h3>
+<div class="outline-text-3" id="text-1-8">
+<ul class="org-ul">
+<li><a href="https://github.com/gofilipa/digital_annotation/blob/master/proposal_summary.md">Proposal Summary</a></li>
+<li><a href="https://github.com/hypothesis/frontend-toolkit/blob/master/docs/css-style-guide.md">CSS Guide</a></li>
+<li><a href="https://github.com/hypothesis/product-backlog/issues/198">Multiple Color issue on github</a></li>
+<li><a href="https://www.w3.org/TR/annotation-model/">W3C Annotation Standards</a></li>
+<li>Levy, Sharona A., “Reading the Reader”. The Difference the Enquiry Makes . ed. Randy Bass and</li>
+</ul>
+<p>
+Bret Enyon. Academic Commons, January 2009.
+</p>
+</div>
+
+<div id="outline-container-org15089be" class="outline-4">
+<h4 id="org15089be"><span class="section-number-4">1.8.1</span> Meeting notes:</h4>
+<div class="outline-text-4" id="text-1-8-1">
+<p>
+Michael:
+</p>
+
+<p>
+Make my commit the best argument I can for why DH is an artist space.
+</p>
+<ul class="org-ul">
+<li>Scholarship as code</li>
+<li>Question: Currently we use different saturation values for our
+highlight color when selections overlap each other. How will we
+approach the overlapping of either completely different highlight
+colors? Is there a theory of color blending? (DWHALEY)</li>
+</ul>
+
+<p>
+Writing the paper
+</p>
+<ul class="org-ul">
+<li>Think about where I can publish it. Hybrid pedagogy?</li>
+<li>Find a way to bring in my development notes as a narrative of my
+work.</li>
+<li>Think about how the story ends: accepted or rejected? Using it in a</li>
+</ul>
+<p>
+class? Scholarship as code? Accepted or rejected? What is the promise
+of queer DH?
+</p>
+
+<p>
+Color
+</p>
+<ul class="org-ul">
+<li>My values / saturations are off.</li>
+<li>Read up on Color Theory. What are some color meanings?</li>
+<li>What are the right colors? What do they mean?</li>
+<li>Imagine what colors I would use to annotate a Woolf text</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Filipa  Calado</p>
+<p class="date">Created: 2019-10-22 Tue 11:03</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
