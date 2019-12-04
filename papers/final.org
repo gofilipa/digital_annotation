@@ -1,41 +1,43 @@
 * Misfittings: Social Annotation with Colors
 
+start with the problem statement: edtech tends on a trend toward
+quantification, toward reduction. /There has been no mechanism for
+opening up our students' heads/. Then include quote about what's
+happening in china, then go into the dangers of edtech.
+
+only then, start to introduce my tool, and the goal of expanding
+active reading to include affect. then, partition & explanation of dev
+notes.
+
+aft3r intro...
+
+the first half of the paper will be looking at different edtech tools
+for how they encourage prescriptive reading practices.
+
+the second half will be discussing how my tool projects to work in
+social contexts to facilitate "misreadings". 
+
 ** Intro 
-*** Expand active reading to include affect
 
-This project explores digital annotation as a way to make solitary
-reading practices more social and engaging. I modified an existing
-annotation tool, /Hypothes.is/[fn:1], to use in my English courses at
-Hunter College. I’ve found that using Hypothes.is in the classroom is
-immensely helpful for modeling “active reading” strategies for
-students and following their progress as they complete the
-reading. Lately, though, I wonder how digital annotation might expand
-to active reading practices to include affect. 
-
-*** Edtech tracks and standardizes learning
-Digital annotation in the classroom plays into conversations about the
-pervasive and insidious nature of many “edtech” (or Educational
-Technology) tools and platforms, especially those that quantify or
-“measure” student learning. Audrey Watters explains that collecting
-information on students not only makes them vulnerable to those who
-would profit from them economically, but also reduces them to data
-points and labels, such as “cheat” or “at risk” ("Ed Tech and
-Trump"). By reducing the differences among learners, data collection
-and analytics--which purport to create “personalized” learning
-experiences---actually work to standardize and automate
-education. 
-
-*** Tracking Neurons
-The work in English---reading, writing, literary analysis---is not
-immune to tracking and standardization. The threat of quantification
-has already marked its path to biological methods of surveillance, in
-little time. Only 10 years ago, Sharona Levy pointed out that, in
-English classes, “there is no mechanism to open [our student's] heads
-and see which neurons are firing while they are reading" (5). This
-year, primary schools in China were reported to roll out a "smart
-learning" program, where teachers track student learning through
-headbands that read brain activity. The results of their neuronal
-activity is visualized so the students can compete against each other:
+*** Seeing Neurons
+In a discussion about using digital annotation tools to teach critical
+reading and writing, Sharona Levy explains that current technology can
+only go so far in illuminating how students process what they
+read. She encouraged her students to comment on texts, to make their
+understanding more transparent and explicit. Although digital
+annotation tools facilitate active reading practices, Levy points out
+that "there is no mechanism to open [our student's] heads and see
+which neurons are firing while they are reading" (5). In the 10 years
+that Levy ran her annotation experiments, however, educational
+technology has developed more incisive and sophisticated methods for
+visualizing student performance. Just a few months ago, primary
+schools in China are rolling out a "smart learning" program, where
+teachers track student learning through headbands that report on brain
+activity. The headbands are programmed to sense fluctuations of brain
+activity across different parts of the brain in class. They report
+these levels, which appears to correlate to student focus during a
+lesson. The results are then visualized and projected for the whole
+class to see:
 
 #+BEGIN_QUOTE
 The competition plays out in the form of a simulated rocket race on a
@@ -47,27 +49,71 @@ score falls—meaning the student’s attention is waning—the rocket
 slows. Wang et al, "China’s Efforts"
 #+END_QUOTE
 
-This development of "smart learning" is part of a larger trend of
-surveillance including facial recognition technologies that that is
-much more pervasive and advanced in China than in the US, at least for
-the time being. China's example suggests where the the trajectory of
-edtech tools eventually lead---to mass neuronal surveillance.
+Developments of "smart learning" in China are part of a general
+increase in surveillance technology, such as facial recognition
+technology. Although these developments are more pervasive and
+advanced in China than in the US (at least for the time being),
+China's example suggests a trajectory for Educational Technology
+(EdTech). These tools, which track and visualize student performance,
+ultimately aim for mass neuronal surveillance.
 
-This makes me wonder, more broadly, about ways of using annotation in
-social contexts to offer alternatives to verbalized responses. How
-might a digital annotation tool short circuit this traditional habit
-of response to address more directly the emotional and instinctual
-reactions that occur during reading? How can digital annotation can
-activate reading as an embodied practice, connecting more directly to
-knowledge as feeling and affect, rather than knowledge as information
-that exists purely in a textual form? To answer these questions, I've
-modified my /Hypothes.is/ annotation tool to include a multi-color
+*** Tracking Learning 
+
+In the US, EdTech blazes the trail toward tracking and
+quantification. Educational platforms (like Blackboard), tools, and
+media increasingly proliferate to offer "personalized solutions" for
+educators to measure and optimize student learning. In doing so, these
+technologies treat students as a site for data collection and
+analytics. Not only does traking students make them vulnerable to
+those who would profit from them economically, it also reduces them to
+data points and labels, such as “cheat” or “at risk," according to
+Audrey Watters ("Ed Tech and Trump"). Watters explains that data
+collection and analytics reduces the differences among learners and
+the complexity of the learning process. Watters concludes that, in
+purporting to create “personalized” learning experience, these
+programs actually standardize and automate education.
+
+*** Affect to Elude Traking
+
+The work in English classrooms, which includes critical reading and
+literary analysis, is not immune to tracking and
+standardization. Digital Annotation, for example, allows students to
+highlight and comment on electronic text, which can then be viewed and
+responded to by other students. A variety of recent digital annotation
+tools now extend this basic functionality to offer additional options
+for responding, such as "tagging," as well as recording student
+reactions to reading. Some of these tools, which I explore in detail
+below, quantify and visualize student annotations to make assessment
+easier for instructors. These features perpetuate the 
+
+One way that digital annotation might side-step attempts at tracking
+is to explore alternatives to verbalized response. How might a digital
+annotation tool short circuit this traditional habit of response to
+address more directly the emotional and instinctual reactions that
+occur during reading? How can digital annotation can activate reading
+as an embodied practice, connecting more directly to knowledge as
+feeling and affect, rather than knowledge as information that exists
+purely in a textual form? To explore these questions, I've modified my
+/Hypothes.is/[fn:1] annotation tool to include a multi-color
 highlighter, rather than just yellow. The option for multiple colors,
-I hope, will expand recuperate the role of the body in reading. By
-prioritizing nonverbal or preverbal responses to recast reading as an
-embodied activity, this tool might encourage students to confront
-their more immediate responses, feelings, and gut reactions during the
-reading process.
+I hope, will recuperate the role of the body in reading in ways that
+resist quantification and tracking. By prioritizing nonverbal or
+preverbal responses to recast reading as an embodied activity, this
+tool might encourage students to confront their more immediate
+responses, feelings, and gut reactions during the reading process. I
+hope that this tool might expand to active reading practices to
+include affect.
+
+My project explores how these tools facilitate what I call
+prescriptive or provocative approaches to reading. Prescriptive
+approaches encourage a standardized method for responding to text,
+where certain options preempt or prompt students to react in specific
+ways. Provocative approaches open the text up to new insights,
+bringing students to imagine new relations and reactions to their
+reading. How do certain features, such as color-coding, categories, or
+tags, for example, actually create a confining structure for response?
+Do additional options limit the kinds of responses students might have
+without these prompts?
 
 *** partition
 
@@ -147,15 +193,9 @@ with nonverbal, embodied reactions to reading, I hope to explore how
 tracking student reading can serve ends that are not exploitative, but
 engendering. In developing my version of the tool, I wonder how
 annotation might expand or reduce the quality of the student’s
-engagement with the text. Here, I’m concerned in the tension between
-what I call the “provocative”---opening up the text to new
-insights---and the “prescriptive”---limiting a student’s interaction
-with the text to a predetermined set of choices or options for
-responding. How do annotation tools create a standardized method or
-process in responding to texts? More specifically, how do certain
-features, such as colors, categories, or tags, for example, actually
-limit the kinds of responses they could have without these prompts,
-creating a confining structure for response?
+engagement with the text. 
+
+[moved discussion on provocative v prescriptive to intro]
 
 *** adder.html 
 5.2.19: adder.html
@@ -542,7 +582,7 @@ Lacuna Stories . The Poetic Media Lab, Standford
 University. https://www.lacunastories.com/
 
 Levy, Sharona A., “Reading the Reader”. /The Difference the Enquiry
-Makes/. ed. Randy Bass and Bret Enyon. Academic Commons, January 2009.
+Makes/. ed. Randy Bass and Bret Eynon. Academic Commons, January 2009.
 
 Malabou, Catherine. /What Should We Do with Our Brain?/ 2008.
 
