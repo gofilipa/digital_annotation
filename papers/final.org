@@ -3,7 +3,8 @@
 start with the problem statement: edtech tends on a trend toward
 quantification, toward reduction. /There has been no mechanism for
 opening up our students' heads/. Then include quote about what's
-happening in china, then go into the dangers of edtech.
+happening in china, then go into the dangers of edtech including the
+reductions of emotional data.
 
 only then, start to introduce my tool, and the goal of expanding
 active reading to include affect. then, partition & explanation of dev
@@ -15,7 +16,7 @@ the first half of the paper will be looking at different edtech tools
 for how they encourage prescriptive reading practices.
 
 the second half will be discussing how my tool projects to work in
-social contexts to facilitate "misreadings". 
+social contexts to facilitate "misreadings".
 
 ** Intro 
 
@@ -57,79 +58,119 @@ China's example suggests a trajectory for Educational Technology
 (EdTech). These tools, which track and visualize student performance,
 ultimately aim for mass neuronal surveillance.
 
-*** Tracking Learning 
+*** EdTech: Tracking Learning 
 
 In the US, EdTech blazes the trail toward tracking and
-quantification. Educational platforms (like Blackboard), tools, and
-media increasingly proliferate to offer "personalized solutions" for
-educators to measure and optimize student learning. In doing so, these
-technologies treat students as a site for data collection and
-analytics. Not only does traking students make them vulnerable to
-those who would profit from them economically, it also reduces them to
-data points and labels, such as “cheat” or “at risk," according to
-Audrey Watters ("Ed Tech and Trump"). Watters explains that data
-collection and analytics reduces the differences among learners and
-the complexity of the learning process. Watters concludes that, in
-purporting to create “personalized” learning experience, these
-programs actually standardize and automate education.
+quantification. Educational platforms and tools increasingly offer
+"personalized solutions" for educators to measure and optimize student
+learning. In doing so, these technologies treat students as a site for
+data collection and analytics. Not only does tracking students make
+them vulnerable to those who would profit from them economically, it
+also reduces them to data points and labels, such as “cheat” or “at
+risk," according to Audrey Watters ("Ed Tech and Trump"). Watters
+explains that data collection and analytics simplifies the differences
+among learners and the complexity of the learning process. Learning
+then becomes less about cultivating individual critical thinking
+skills and more about acclimating students to certain mechanized
+processes for response and information retrieval. Watters concludes
+that, in purporting to create “personalized” learning experience,
+these programs actually standardize and automate education. Like
+Watters, Amelia Abreu is wary of the capitalist aims that drive
+quantification, and she explores the role of emotion in
+quantification. Abreau focuses on the "Quantified Self" movement,
+which encourages followers to track and measure daily activities, such
+as exercise and work, toward "the discovery and adoption of
+near-perfect, near-universal metrics" ("Quantify
+Everthing"). Quantified Self aims for this ideal measurement of the
+human body and human actions in order to improve them, making them
+more efficient and productive. Abreu points out that the drive toward
+human optimization, which "has been problematized since Rousseau,"
+leaves out emotional or affective qualities that are more challenging
+to quantify. How do these tools measure the struggle that students
+undergo in solving a problem? The feelings of confusion, doubt,
+interest, and elation that accompany learning? The danger here, which
+Abreu points out, is that these emotional qualities and labors are not
+easily sensed or represented by quantitative methods.
 
 *** Affect to Elude Traking
 
-The work in English classrooms, which includes critical reading and
-literary analysis, is not immune to tracking and
-standardization. Digital Annotation, for example, allows students to
-highlight and comment on electronic text, which can then be viewed and
-responded to by other students. A variety of recent digital annotation
-tools now extend this basic functionality to offer additional options
-for responding, such as "tagging," as well as recording student
-reactions to reading. Some of these tools, which I explore in detail
-below, quantify and visualize student annotations to make assessment
-easier for instructors. These features perpetuate the 
-
-One way that digital annotation might side-step attempts at tracking
-is to explore alternatives to verbalized response. How might a digital
-annotation tool short circuit this traditional habit of response to
+One example of this difficulty is in edtech solutions for Digital
+Annotation, often used to teach "active reading" skills in English
+classrooms. In English instruction, Digital Annotation makes reading
+practices more visible in order to improve critical thinking and
+literary analytical skills. It allows students to highlight and
+comment on electronic text, which can then be viewed and responded to
+by other students. Most implementations of Digital Annotation aim to
+cultivate active reading practices that engage directly with the ideas
+and language of the text, which are difficult to teach except by
+modeling and practice, as many English instructors know. Even this
+elusive work of active reading is not immune to the attempts of
+tracking and standardization. A variety of recent digital annotation
+tools now extend the basic "highlight" and "comment" functionality to
+offer additional options for responding, such as categorizing types of
+annotations, as well as tracking student reactions to reading. Some of
+these tools, which I explore in detail below, quantify and visualize
+student annotations to make assessment easier for instructors. In
+doing so, they run the risk of reducing the emotional labors of
+reading to artibrary metrics like "annotation length." How might
+digital annotation address /affect/ as part of active reading
+processes? How can instructors short circuit attempts at tracking to
 address more directly the emotional and instinctual reactions that
-occur during reading? How can digital annotation can activate reading
-as an embodied practice, connecting more directly to knowledge as
-feeling and affect, rather than knowledge as information that exists
-purely in a textual form? To explore these questions, I've modified my
-/Hypothes.is/[fn:1] annotation tool to include a multi-color
+occur during reading?
+
+My project explores how digital annotation can side-step attempts at
+tracking by offering alternatives to verbalized response. It seeks to
+activate reading as an embodied practice, connecting more directly to
+knowledge as feeling and affect, rather than knowledge as information
+that exists purely in a textual form. Toward that end, I've modified
+my /Hypothes.is/[fn:1] annotation tool to include a multi-color
 highlighter, rather than just yellow. The option for multiple colors,
 I hope, will recuperate the role of the body in reading in ways that
-resist quantification and tracking. By prioritizing nonverbal or
-preverbal responses to recast reading as an embodied activity, this
-tool might encourage students to confront their more immediate
-responses, feelings, and gut reactions during the reading process. I
-hope that this tool might expand to active reading practices to
-include affect.
+resist quantification and tracking, by prompting reactions that occur
+prior to fully articulated thought. In prioritizing nonverbal or
+preverbal responses, it recasts reading as an embodied activity,
+encouraging students to confront their more immediate responses,
+feelings, and gut reactions during the reading process.
 
-My project explores how these tools facilitate what I call
-prescriptive or provocative approaches to reading. Prescriptive
-approaches encourage a standardized method for responding to text,
-where certain options preempt or prompt students to react in specific
-ways. Provocative approaches open the text up to new insights,
-bringing students to imagine new relations and reactions to their
-reading. How do certain features, such as color-coding, categories, or
-tags, for example, actually create a confining structure for response?
-Do additional options limit the kinds of responses students might have
-without these prompts?
+*** TODO link the idea of verbalization and tracking? 
+could this be about alternative methods of visualizing student
+performance, perhaps in ways that elude traditional quantification?
 
-*** partition
+*** partition, structure to come
 
-Digital annotation engages in conversations about education,
-technology, and embodiment. It casts work already being done at the
-intersection of technology and embodiment within conversations about
-pedagogy.[fn:2] In thinking about technology and embodiment, I'm
-especially interested in the parallels across the technical and
-neurological. In what follows, then, I couch pedagogial interventions
-within discussions about how emotion functions in the body. Throughout
-this discussion, I also interweave a narrative of the tool’s technical
-development, inserting images and excerpts from my daily development
-notes. My aim here is to make the coding work simultaneously more
-visible and opaque, indicating to the nontechnical reader some of the
-suspensions of knowledge that are part of immersing yourself within a
-technical project.
+Though things are developing dramatically in the world of EdTech,
+Levy's claim---that you cannot open up a student's brain to see which
+neurons are firing during reading---still stands. Although we cannot
+(yet) visualize how a student processes a text, looking at what
+happens in the brain and body during reading reveals the role of
+affect in opening up how we understand learning. By "affect," I refer
+to the cogntive and embodied processes of perception that guide
+emotional reactions to text. In reading the body back into active
+reading, Digital Annotation becomes the site where conversations about
+educational technology intersect with conversations about theories of
+embodied cognition. Therefore, for the rest of this paper, I approach
+educational technology side by side with discussions on embodied
+cognition, searching for parallels across the technical and
+neurological. Exploring how emotion functions in the body enhances my
+critique of the pedagogical value of certain annotation tools and
+offers alternative methods for assessing student performance. As the
+example with China's "smart learning" headbands demonstrates, if we do
+not engage thoughtfully with the processes of embodied learning,
+EdTech will provide its own "solutions."
+
+Throughout my examination of technology and embodiment, I also
+interweave a narrative of my work on the annotation tool that I'm
+developing for my English classroom. Here, I insert excerpts and
+images from my "development notes," a record of my progress throughout
+the tool's technical and theoretical development. These notes portray
+the confusion, contradictions, and suspensions of knoweldge that are
+part of working with technology. I hope that these notes will show
+readers who are not familiar with coding that, regardless of
+proficiency, all technological projects contain obstacles and
+challenges. By making the coding work more visible, I gesture toward
+the inherent opacity of digital methods and tools, indicating to the
+nontechnical reader some of the suspensions of knowledge that are part
+of immersing yourself within a technical project.
 
 *** Dev Environment
 
@@ -138,8 +179,8 @@ technical project.
 Today Joe and I tried following the Client development instructions on
 the H docs. There were a bunch of issues, mostly to do with NPM. From
 what I can gather, Node requires you to install it globally, rather
-than just locally. As a result, every time we ran NPM we encountered a
-bunch of errors.
+than just locally. As a result, every time we ran the local version of
+NPM we encountered a bunch of errors.
 
 It took us (mostly Joe) about an hour and a half attempting to install
 the client and browser-extension this sloooow way before we finally
@@ -153,61 +194,68 @@ rather than NPM. The instructions are below:
 
 ** Edtech
 
-*** Fired Up 
+*** Anger Avoids Exploitation
 
-Though things are changed dramatically in the world of edtech, Levy's
-point---that it is very difficult to understand how a student
-processes a text---still stands. Even now, neuroscientists disagree
-about seemingly simple questions like where consciousness is located
-in the brain or body, not to mention how learning functions on a
-neuronal level. This uncertainty leaves a space for brain functioning
-to be coopted into discourses about productivity and management. For
-example, Catherine Malabou points out the common assumption in
-"neuronal ideology" that brains should be made to conform and adapt to
-social and economic needs. Malabou finds a troubling parallel between
-discourses on "brain plasticity," which posits a flexible, developing
-brain, and capital's need for docile, networked, and adaptable
-workers. She suggests that people resist this understanding of "brain
-plasticity" by exploring another valence of the word plastic that is
-based off the french term /plastique/, which means "explosive."
+The attempts by EdTech to turn human bodies into sites of data
+collection benefit from a general disagreement about how learning
+works in the brain and body. Neuroscientists have long argued about
+seemingly simple questions like where consciousness is located, not to
+mention how learning functions on a neuronal level. This uncertainty
+leaves a space for cognition to be coopted into discourses about
+productivity and management. For example, Catherine Malabou points out
+the common assumption in "neuronal ideology" that brains should be
+made to conform and adapt to social and economic needs. Malabou finds
+a troubling parallel between discourses on "brain plasticity," which
+posit a flexible, developing brain, and capital's need for docile,
+networked, and adaptable workers. In resisting this understanding of
+"brain plasticity," she explores another valence of the word plastic
+that is based off the french term /plastique/, meaning "explosive."
 Rather than approach plastic as flexible, something that can be molded
 to fit economic needs, plastic can be an agent for annihiliation and
-creativity. Plasticity in this sense is a means of refusal to submit
-to the managerial model, to resist complicity to capitalism. Malabou
-concludes that "Perhaps we ought to relearn how to enrage ourselves,
-to explode against a certain culture of docility, of amenity, of the
-effacement of all conflict even as we live in a state of permanent
-war" (79). Here, Malabou insists that affect---particularly anger---is
-a tool for refusing expectations for docility and complicity. Her
+creativity. Plasticity in this sense offers a means of refusal to
+submit to the managerial model, to resist complicity to
+capitalism. Malabou insists that affect---particularly anger---is a
+tool for refusing expectations for docility and complicity: "Perhaps
+we ought to relearn how to enrage ourselves, to explode against a
+certain culture of docility, of amenity, of the effacement of all
+conflict even as we live in a state of permanent war" (79). Her
 exhortation to "enrage" ourselves points to a way that people can use
 emotion to subvert pressures to be managed or conform to standards of
 productivity.
 
-*** The tension between the “provocative” and the “prescriptive”.
+*** Tool overview: the “provocative” vs “prescriptive”.
 
-Malabou's deployment of affect as a way of resisting productivity
-guides my own approach. Through this digital annotation tool, I
-experiment with reading to engage moments of emotional struggle and
-insight, rather than measurable “learning outcomes”. By experimenting
-with nonverbal, embodied reactions to reading, I hope to explore how
-tracking student reading can serve ends that are not exploitative, but
-engendering. In developing my version of the tool, I wonder how
-annotation might expand or reduce the quality of the student’s
-engagement with the text. 
-
-[moved discussion on provocative v prescriptive to intro]
+Malabou's invocation to anger as a means of resisting the pressures of
+productivity opens up the way we understand digital annotation. How
+can tracking student reading can serve ends that are not exploitative,
+but creative, approaching students as sites of data production rather
+than data collection? In what follows, I examine a variety of Digital
+Annotation tools (alongside my own) for how they scaffold student
+responses to reading. Here, I'm interested in whether Digital
+Annotation facilitates what I call prescriptive or provocative
+approaches to reading. Prescriptive approaches encourage a
+standardized method for responding to text, where certain options
+preempt or prompt students to react in specific ways. Provocative
+approaches open the text up to new insights, bringing students to
+imagine new relations and reactions to what they read. How do certain
+features, such as color-coding, categories, or tags, for example,
+actually create a confining structure for response? Do additional
+options limit the kinds of responses students might have without these
+prompts? Specifically, I wonder how such features might engage
+emotional struggle and insight, rather than measurable “learning
+outcomes.”
 
 *** adder.html 
 5.2.19: adder.html
 
 This is the short html file for the buttons, both the "Annotate" and
 "Highlight" button that pop up together once you make a text
-selection./ /I was able to make additional buttons (which didn't
+selection./ /I am able to make additional buttons (which don't
 actually work when pressed) on the toolbar by duplicating the html
 within the file. It is important to note that on its own, my work in
-this file was never functional. In order for the buttons to work, I
-had to modify some javascript files that saved and passed the data
-from the user’s click.
+this file doesn't affect functionality. In order for the buttons to
+work, I have to modify some javascript files that save and pass the
+data from the user’s click.
 
 The image shows two files on top of each other. In the background,
 there’s an image of my final modifications to the adder, with an
@@ -229,11 +277,11 @@ shares a basic functionality with Hypothes.is, which is highlighting
 text and responding through a written annotation. But it has some
 additional features, including options for different “reactions”,
 called “sentiment tags”, and options for choosing from a list of
-“themes”, compiled and customized by the teacher. The “sentiment tags”
+“themes," compiled and customized by the teacher. The “sentiment tags”
 are particularly interesting, because they allow students to
 color-code their responses according to the categories
-“clarification”, “analysis” or “emotion”. Carl Byth explains that goal
-of this “microresponse” strategy is to condense student responses into
+“clarification," "analysis" or "emotion." Carl Byth explains that goal
+of this "microresponse" strategy is to condense student responses into
 a simple expression that others can most easily engage with:
 
 #+BEGIN_QUOTE
@@ -244,21 +292,21 @@ critiques of the text (e.g., “This smells like hyperbole”), and
 emotional responses to the text (e.g., “Tsk, I disapprove.”) Blyth 209
 #+END_QUOTE
 
-Here, the pithy annotations allow interpretations to be shared and
-recognized among readers. These “microresponses” function analagously
-to emoticons or emojis, which are more exaggerated methods of
-condensing feeling into a expression that’s easily shared across
-social media.
+These pithy annotations enourage readers to categorize their responses
+as cognitive, analytic, or emotional, and they allow interpretations
+to be shared and recognized among readers. These “microresponses”
+function analagously to emoticons or emojis, which are more
+exaggerated methods of condensing feeling into a expression that’s
+easily shared across social media.
 
 Despite the obvious social benefits of this tool, this prefabrication
-of responses seems constraining. By forcing the reader to choose
+of responses could be constraining. By forcing the reader to choose
 between “clarification”, “analysis” or “emotion”, is the tool
 determining what kind of reaction someone might have? Or do these
-three tagging option (the cognitive, analytic, or emotional) function
-as an “enabling constraint”, that is, as a productive scaffolding that
-guides students toward thinking more deeply about their reading?
-Keeping these questions in mind, I now turn to another tool that
-functions similarly to Ponder.
+three tagging options function as an “enabling constraint”, that is,
+as a productive scaffolding that guides students toward thinking more
+deeply about their reading? Keeping these questions in mind, I now
+turn to another tool that functions similarly to Ponder.
 
 *** Lacuna Stories
 
@@ -292,28 +340,30 @@ that must be negotiated between the desire to allow students the space
 for intellectual discovery and the desire to guide their learning
 along a pre-specified path” (“Making Reading Visible”). In other
 words, annotation primes students toward more fixed interpretations of
-the text before they even enter into the classroom. Another drawback
-is the way that Lacuna Stories tracks and visualizes student activity
-across the platform. Lacuna contains an “Annotation Dashboard” that is
-only visible to instructors so that they might access data about their
-students' annotations. On this dashboard, student data such as the
-number and length of annotations is quantified and visualized in a
-series of graphs and charts. Here, annotations "serve as an
-accountability mechanism for completing assigned reading in a timely
-fashion, because instructors will see students’ activity on the text
-and students will know that instructors can see this activity”
-(Schneider et al). For example, “Filter by Time," instructors can view
-the raw number of annotations made on any given day of the course,
-getting a sense of daily participation. In “Annotation Details”, a
-series of pie charts indicate the relative amount of annotations by
-category and the length for each annotation. Finally, the “Network”
-section connects students to the texts they have annotated, where the
-links between them are weighted according to the amount of annotations
-each student made on each text. By directly visualizing quantitative
-information about student annotations, the Annotation Dashboard
-potentially engages in the reductive effects of certain edtech tools
-that Audrey Watters warns about. How is tracking the distribution,
-amount, of length of annotations an effective assessment criterion?
+the text before they even enter into the classroom.
+
+Another drawback is the way that Lacuna Stories tracks and visualizes
+student activity across the platform. Lacuna contains an “Annotation
+Dashboard” that is only visible to instructors so that they might
+access data about their students' annotations. On this dashboard,
+student data such as the number and length of annotations is
+quantified and visualized in a series of graphs and charts. Here,
+annotations "serve as an accountability mechanism for completing
+assigned reading in a timely fashion, because instructors will see
+students’ activity on the text and students will know that instructors
+can see this activity” (Schneider et al). For example, in “Filter by
+Time," instructors can view the raw number of annotations made on any
+given day of the course, getting a sense of individual
+participation. In “Annotation Details”, a series of pie charts
+indicate the relative amount of annotations by category and the length
+for each annotation. Finally, the “Network” section connects students
+to the texts they have annotated, where the links between them are
+weighted according to the amount of annotations each student made on
+each text. By directly visualizing quantitative information about
+student annotations, the Annotation Dashboard potentially engages in
+the reductive effects of certain edtech tools that Audrey Watters
+warns about. How is tracking the distribution, amount, of length of
+annotations an effective assessment criterion?
 
 *** Styling the Dropdown IV:
 
@@ -341,10 +391,8 @@ inline CSS rule in adder.html to color the entire button. This is less
 elegant than I hoped, but at this point I need to move on. I'm going
 to leave it as is and start thinking about functionality.
 
-[[file:itp_final_images/dropdown1.png][the first iteration: a boring
-dropdown menu]] [[file:itp_final_images/dropdown2.png][the second
-iteration: a busy style]] [[file:itp_final_images/dropdown3.png][the
-third iteration: simple colored icons]]
+[[file:itp_final_images/dropdown1.png][the first iteration: a boring dropdown menu]] [[file:itp_final_images/dropdown2.png][the second iteration: a
+busy style]] [[file:itp_final_images/dropdown3.png][the third iteration: simple colored icons]]
 
 *** Quantifying Tension
 
@@ -358,8 +406,9 @@ into students’ reading, [we] were able to pinpoint the exact places in
 the text that generated the most frustration, confusion, or
 disagreement [among] students” (“Making Reading Visible”). Here, the
 threaded annotations, where students engage in debate and conversation
-about the text, serve as an indicator of tension in their
-reading. Instructors can then turn the class’s attention to exploring
+about the text, serve as an indicator of tension in their reading,
+creating a "heatmap" of the text's more controversial
+moments. Instructors can then turn the class’s attention to exploring
 these moments more fully.
 
 
@@ -367,36 +416,40 @@ these moments more fully.
 *** Layering Colors / misfittings
 
 Identifying moments of tension is one of the goals of my multi-color
-highlighter. The Hypothes.is highlighter contains a degree of opacity,
-which can be adjusted manually by going into the code. In making the
-colors almost transparent, one color can be layered over another,
-creating color mixtures and combinations. Low opacities of highlighter
-colors, when used in by a group of readers, create a visible
-palimpsest of readings. This effect recalls conversations in
-neuroscience about the ways that embodied cognition works within
-social contexts. Although much of neuroscientific work on "embodied
+highlighter. This highlighter contains a degree of opacity, which can
+be adjusted manually by going into the code. In making the colors
+almost transparent, one color can be layered over another, creating
+color mixtures and combinations. Low opacities of primary colors, when
+used among a group of readers, create a visible palimpsest of
+readings.
+
+[image of orlando in multiple colors]
+
+This effect evokes conversations in neuroscience about the ways that
+embodied cognition works (or fails to work) within social
+contexts. Although much of neuroscientific work on "embodied
 cognition" does a good job situating thinking in the body, it tends to
 overlook how body specificity determines individual
 experience. According to Victoria Pitts-Taylor, much of this work
-generalizes the way that everyone accesses and experiences the world,
-assuming universal brain structures. In response, Pitts-Taylor
-explores how brains are shaped by real inequalities of race, gender,
-class, and sexuality, asserting that “bodily difference yields
-cognitive difference” (56). She gives the example of "mirror neurons,"
-which are neurons in the brain which activate when the body engages in
-or witnesses action. "Mirroring" whatever action they perceive, these
+assumes universal brain structures across all populations. In
+response, Pitts-Taylor explores how brains are shaped by real
+inequalities of race, gender, class, and sexuality, asserting that
+“bodily difference yields cognitive difference” (56). She gives the
+example of "mirror neurons," which are neurons in the brain which
+activate when the body engages in or witnesses action, and are thought
+to enable empathy. "Mirroring" whatever action they perceive, these
 neurons enact the same process in the brain as if the body were really
-performing the action, and are therefore thought to enable
-empathy. According to Pitts-Taylor, however, simulation can actually
-get in the way of understanding. Bodily difference will cause mirror
-neurons to make mistakes, projecting one set of assumptions onto
-another body. She explains that “We cannot rely on simulation, whether
-propositional or neural, to do the work of knowing the other and of
-relating to them and feeling for them in nonviolent ways” (92). My
-tool aims to reveal this limit of identification through the layering
-feature. It is my hope that alternative reactions to a particular text
-will render in the color mixtures, in the alchemy of dissonances,
-combinations, and new concoctions that layering creates.
+performing the action. According to Pitts-Taylor, neuronal simulation
+can actually get in the way of understanding. Bodily difference will
+cause mirror neurons to make mistakes, projecting one set of
+assumptions onto another body. She explains that “We cannot rely on
+simulation, whether propositional or neural, to do the work of knowing
+the other and of relating to them and feeling for them in nonviolent
+ways” (92). My tool aims to reveal this limit of identification
+through the layering feature. It is my hope that alternative reactions
+to a particular text will render in the color mixtures, in the alchemy
+of dissonances, combinations, and new concoctions that layering
+creates.
 
 *** Tracing the Click
 
@@ -410,7 +463,7 @@ sense of how the highlighting is processed here, through specific
 functions and calls. Things really started to come together when I
 followed the code backward, starting from the end, and working my way
 up to the event handler in adder.js. Overview of events: The
-onHighlight option called in addder.js here initiates a call to
+onHighlight option called in addder.js initiates a call to
 createHighlight which passes "true" for highlight into a larger
 function called createAnnotation. It's in this function that
 highlightRange runs with potentially three arguments, which I can
@@ -420,51 +473,10 @@ highlight. That's it!
 
 [IMAGE: Tracing the click]
 
-*** How I Use Color: Engaging Emotions
-
-One way to harness the color opacity is to have color mixtures
-indicate emotions. Below is a “wheel of emotions” developed by Robert
-Plutchik, a professor of psychology, who transposes his own theory of
-emotions into a color wheel. In this image, the color differences
-indicate changes in emotional quality and saturation indicates the
-intensity of emotion. The more saturated colors on the inner ring
-represent more intense forms of the emotion, while the brighter colors
-on the outer rings are milder. There are eight primary emotions, which
-run along the second ring: these are joy, trust, fear, surprise,
-sadness, disgust, anger and anticipation. For example, apprehension
-(light green) is a mild form of fear, while rage (dark red) is an
-intense form of anger. Plutchik also theorized emotional dyads, which
-are feelings composed of two emotions. For example, the dyad between
-fear and surprise is awe, and between joy and trust is love.
-
-What if students use these colors not only to highlight text according
-to their feelings or gut reactions, but also to engage with other
-students’ highlights in the form of layering? I wonder what would
-happen, for example, if one student were to highlight a piece of text
-as orange, for “anticipation”, and another were to highlight that same
-piece as red, for “anger”. The resulting dyad, which would be
-red-orange, signifies “aggressiveness” on the chart. How does this
-result change the way we read the text? My sense is that confronting
-and attending to these feelings will open up ways that students
-connect to what they read.
-
-*** index.coffee
-
-8.30.19 it works!
-
-Last week, I had a meeting with Joe and we were able to iron out the
-remaining issue of calling the highlight value from the button to
-configure the highlight color. Basically, we passed the highlight data
-through guest.coffee into the highlighter module, in index.coffee,
-where we added a script that configures the appropriate color
-depending on which button was clicked.
-
-[IMAGE: index.coffee]
-
 *** Damasio: Embodied Cognition
 
 This tool approaches affect as a type of knowledge that extends into
-the body, and intends that the user interface will engage bodily
+the body, and configures the user interface to engage bodily
 experience. The process of embodied cognition---how thinking happens
 with the body---is therefore a crucial consideration to my
 project. Antonio Damasio, a vocal proponent for embodied
@@ -500,6 +512,47 @@ a text selection and choosing colors will create a rhythm of response
 that might harness immediate and primordial feelings that occur during
 the reading process.
 
+*** index.coffee
+
+8.30.19 it works!
+
+Last week, I had a meeting with Joe and we were able to iron out the
+remaining issue of calling the highlight value from the button to
+configure the highlight color. Basically, we passed the highlight data
+through guest.coffee into the highlighter module, in index.coffee,
+where we added a script that configures the appropriate color
+depending on which button was clicked.
+
+[IMAGE: index.coffee]
+
+*** How I Use Color: Engaging Emotions
+
+I experiment with color opacity is by having color mixtures indicate
+emotions. Below is a “wheel of emotions” developed by Robert Plutchik,
+a professor of psychology, who transposes his own theory of emotions
+into a color wheel. In this image, the color differences indicate
+changes in emotional quality and saturation indicates the intensity of
+emotion. The more saturated colors on the inner ring represent more
+intense forms of the emotion, while the brighter colors on the outer
+rings are milder. There are eight primary emotions, which run along
+the second ring: these are joy, trust, fear, surprise, sadness,
+disgust, anger and anticipation. For example, apprehension (light
+green) is a mild form of fear, while rage (dark red) is an intense
+form of anger. Plutchik also theorized emotional dyads, which are
+feelings composed of two emotions. The dyad between fear and surprise
+is awe, and between joy and trust is love.
+
+What if students use these colors not only to highlight text according
+to their feelings or gut reactions, but also to engage with other
+students’ highlights in the form of layering? I wonder what would
+happen, for example, if one student were to highlight a piece of text
+as orange, for “anticipation”, and another were to highlight that same
+piece as red, for “anger”. The resulting dyad, which would be
+red-orange, signifies “aggressiveness” on the chart. How does this
+result change the way we read the text? My sense is that confronting
+and attending to these feelings will open up ways that students
+connect to what they read.
+
 /This is as much as I have for now... I need to add sections that
 expand on Pitts-Taylor's discussion on mirror neurons to talk about
 "misfitting" and connection to Disability studies, include some color
@@ -507,6 +560,7 @@ theory (the choice of color palettes and whether or not color use
 should be used in pre-defined ways or more spontaneously), and, of
 course, my experience of using this in the classroom <--- most
 important/
+
 
 
 ** To Write: Color Theory toward a Queer Theory
@@ -657,14 +711,6 @@ highlighted, and all users may view the annotation on a collapsible
 sidebar. By selecting the “reply” button, users then can respond to
 the comment, which will appear below the previous annotation on the
 sidebar.
-
-[fn:2] For example, N. Katherine Hayles traces the severance of the
-body from the mind, or how "information lost its body," across
-technological discourses (2). According to Hayles, the prioritization
-of rationality over emotion emerges in eighteenth century liberal
-humanist ideas about knowledge existing independently of the body and
-extends to 20th and 21st century ideas about the posthuman that
-imagine the body as a (detachable) prosthesis of the mind.
 
 
 * bank
