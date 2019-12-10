@@ -1,3 +1,48 @@
+## 12.14.19 Annotation Research 
+
+Reading the W3C standards on [Web
+Annotation](https://www.w3.org/TR/annotation-model/) data model. 
+- Annotating is "the act of creating associations between distinct
+  pieces of information." 
+- All annotations contain a "body," or the stuff of the annotation,
+  and the "target," or the resource being annotated. 
+- Annotation data is stored in JSON
+- See the following on protocols for [annotation
+  retrieval](https://www.w3.org/TR/annotation-protocol/)
+  
+
+Annotator.js stores its annotations through [Annotator
+Store](https://github.com/openannotation/annotator-store). 
+
+
+
+## 12.9.19 Submission
+
+Yesterday I submitted my final paper for the ITP (Interactive
+Technology and Pedagogy) certificate program.
+
+The paper critiques Educational Technology (EdTech) tools, which track
+and quantify student performance in ways that automate and standardize
+learning. I approache digital annotation as a potential means of
+refusing to follow these trends of data collection. In the paper, I
+use the multi-color highlighter to bring edtech into conversation with
+neuroscience, exploring how digital annotation engages embodied
+reading practices that subvert edtech’s attempts to measure and
+quantify student reading. The paper, as it stands, has some work to
+do. The most important task, however, is to finally use this tool in a
+classroom, allowing my students to play around with it and inspire
+further developments.
+
+Unfortunately, I cannot use the tool in a classroom until I get some
+kind of server authentication for storing and retrieving
+annotations. I had a meeting last week with the Hypothes.is team, and
+they cannot support the data model of multi-color annotations, which
+is understandable. I’m meeting with another of their developers next
+week, individually, and I think he can help me at least to understand
+the server-side of things so I can potentially make my own database to
+store annotations. We will see.
+
+
 ## 10.14 Deployment
 
 Last week I published [a blog post](https://digitalfellows.commons.gc.cuny.edu/2019/10/10/toward-the-end-of-a-digital-project-reflections-on-starting-over/) on the Digital Fellows blog about this project. Writing the blog post was generative for me, allowing me to rethink my goals now that most of the coding work is done. It's clear to me that I need to pursue two things: using color to engage emotions while reading (for my own research) & using color so that users & groups can assign their own meanings (for teaching generally). 
