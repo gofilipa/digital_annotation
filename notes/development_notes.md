@@ -1,20 +1,44 @@
-## 12.14.19 Annotation Research 
+## 12.14.19 Prepping for H team meetings
 
-Reading the W3C standards on [Web
+I'm prepping for a meeting with Jon Udell of Hypothes.is, who is
+hopefully going to help me consider options deploying the highlighter
+in a way that saves annotations.
+
+From my meeting last week with the H team, it seems that I have to set
+up my own instance of H to save the annotations. The concern is that
+their H instance cannot support color data in their annotation
+model. The solution is to run my own version of H. 
+
+I've had some issues with getting an H dev setup. In installing [H dev
+environment](https://h.readthedocs.io/en/latest/developing/install/),
+I cannot run make devdata. As a result, I have to manually set up
+client integration. But I'm stuck on logging into the admin
+panel. Therefore, cannot complete these steps about [registering an
+OAuth
+Client](https://h.readthedocs.io/en/latest/developing/integrating-client/)
+in manually setting up client integration.
+
+Links for reference:
+- Robert Knight's pull request ["Make it easier to create custom builds
+of the client #1137"](https://github.com/hypothesis/client/pull/1137)
+and [commit history](https://github.com/gofilipa/client/commits/h5p)
+which I've integrated into my client. 
+- my [commit
+  history](https://github.com/gofilipa/client/commits/multi-color-highlighter)
+  of the front end work I've done on the highlighter.
+
+Some other research on annotation models:
+- Reading the W3C standards on [Web
 Annotation](https://www.w3.org/TR/annotation-model/) data model. 
-- Annotating is "the act of creating associations between distinct
+	- Annotating is "the act of creating associations between distinct
   pieces of information." 
-- All annotations contain a "body," or the stuff of the annotation,
+  - All annotations contain a "body," or the stuff of the annotation,
   and the "target," or the resource being annotated. 
-- Annotation data is stored in JSON
-- See the following on protocols for [annotation
+  - Annotation data is stored in JSON
+  - See the following on protocols for [annotation
   retrieval](https://www.w3.org/TR/annotation-protocol/)
-  
-
-Annotator.js stores its annotations through [Annotator
-Store](https://github.com/openannotation/annotator-store). 
-
-
+- Storage: Annotator.js stores its annotations through [Annotator
+Store](https://github.com/openannotation/annotator-store).
 
 ## 12.9.19 Submission
 
