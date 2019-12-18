@@ -1,3 +1,52 @@
+# 12.18.19 
+
+Just had a really enlightening meeting with one of Hypothes.is's
+developers, Jon Udell. After last week, I was pretty discouraged about
+H servers being able to store color data. Jon approached the issue
+from a different direction, though. I should try to create a single
+page app for highlighting, because I don't need much of the
+functionality and features that come packaged with the core, not to
+mention the H service. I can do this by cobbling together some smaller
+modules ("Standalone Anchoring" and "Hello World Annotated"). More
+info from the meeting below:
+
+It is possible to send my annotation data to the servers. They will
+take arbitrary JSON, can inject additional data. 
+
+J's suggestion is to make a custom front end app, which combines the
+modules that I need. I don't have to go into the H service. I need an
+approach that leverages the core ingredients. 
+
+Make two modifications
+- first the display. Is this done?
+- second the part of the client that posts annotation payloads.
+
+There are two parts to the app: sending data and grabbing data. 
+
+Grabbing data: Anchoring annotations using a custom tool. The API is
+what fetches the annotations, and they are anchored to the
+webpage. You can extract this anchoring functionality from
+"[Standalone
+Anchoring](https://github.com/judell/StandaloneAnchoring)." This is
+what gets the annotations from the database.
+
+Sending data: You can send your annotations, your created
+annotations. See the "[Hello World
+Annotated](https://github.com/judell/HelloWorldAnnotated)"
+repository. It gathers information, gets the selection, range, data
+from the location, formulates the Text Quote Anchor. It posts the
+payload. All I need is the script at the bottom to load the tool.
+
+Find the h_token in console / storage (or application / local
+storage). The h_token is tied to the domain. See with Facet: when it
+starts up, it asks for a token, and puts it there. This is how the
+token works. 
+
+Eventually I can turn my tool into a browser extention. 
+
+Jon Udell's [suite of tools](http://jonudell.net/h/).
+
+
 ## 12.14.19 Prepping for H team meetings
 
 I'm prepping for a meeting with Jon Udell of Hypothes.is, who is
