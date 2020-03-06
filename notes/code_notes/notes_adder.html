@@ -1,0 +1,18 @@
+<hypothesis-adder-toolbar class="annotator-adder js-adder">
+  <hypothesis-adder-actions class="annotator-adder-actions">
+    <button class="annotator-adder-actions__button h-icon-annotate js-annotate-btn">
+      <span class="annotator-adder-actions__label" data-action="comment">Annotate</span>
+    </button>
+    <!--
+        the class "js-highlight-btn" sends us to adder.js -> guest.coffee -> index.coffee to handle the highlighting. It grabs the color from variables.scss.
+    -->
+    <button class="annotator-adder-actions__button h-icon-highlight js-highlight-btn dropdown">
+      <span class="annotator-adder-actions__label">Highlight</span>
+      <div class="dropdown-content">
+          <li id='red' class="h-icon-highlight red" data-action="highlight">
+          <li id= 'blue' class="h-icon-highlight blue" data-action="highlight">
+          <li id='yellow' class="h-icon-highlight yellow" data-action="highlight">
+      </div>
+    </button>
+  </hypothesis-adder-actions>
+</hypothesis-adder-toolbar>
